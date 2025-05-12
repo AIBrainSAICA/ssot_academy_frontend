@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Primary colors - elegant dark red (#A22A29) */
+    --primary: 0 59% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary colors - subtle gray with red undertone */
+    --secondary: 0 5% 96%;
+    --secondary-foreground: 0 30% 20%;
+
+    /* Muted colors */
+    --muted: 0 5% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent colors - subtle warm tone */
+    --accent: 0 10% 96%;
+    --accent-foreground: 0 59% 35%;
+
+    /* Destructive colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Border and input colors */
+    --border: 0 5% 90%;
+    --input: 0 5% 90%;
+    --ring: 0 59% 40%;
+
+    /* Border radius */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 59% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 5% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 5% 15%;
+    --muted-foreground: 0 0% 64%;
+
+    --accent: 0 5% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 5% 15%;
+    --input: 0 5% 15%;
+    --ring: 0 59% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles */
+.shadow-glow {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.shadow-glow-red {
+  box-shadow: 0 0 10px rgba(162, 42, 41, 0.5);
+}
+
+/* Animation for analysis points */
+@keyframes analysis-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse {
+  animation: analysis-pulse 2s infinite;
+}
