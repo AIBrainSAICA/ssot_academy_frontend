@@ -36,14 +36,50 @@ export default function YouthDevelopment() {
             />
             <span className="text-xl font-bold">Superstars of Tomorrow</span>
           </div>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/#features" className="text-sm font-medium hover:text-primary transition-colors">
-              Features
+          <nav className="hidden md:flex items-center gap-6">
+            <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
+              Home
             </Link>
-            <Link href="/#programs" className="text-sm font-medium hover:text-primary transition-colors">
-              Programs
+            <div className="relative group">
+              <button className="flex items-center text-sm font-medium hover:text-primary transition-colors">
+                Programs
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 ml-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-1">
+                  <Link
+                    href="/programs/foundation-stage"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Foundation Stage (6-10)
+                  </Link>
+                  <Link
+                    href="/programs/youth-development"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-bold"
+                  >
+                    Youth Development (11-15)
+                  </Link>
+                  <Link
+                    href="/programs/elite-pathway"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Elite Pathway (16-20)
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <Link href="/#coach-section" className="text-sm font-medium hover:text-primary transition-colors">
+              For Coaches
             </Link>
-            <Link href="/#contact" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link href="/#footer-contact" className="text-sm font-medium hover:text-primary transition-colors">
               Contact
             </Link>
           </nav>
@@ -62,14 +98,14 @@ export default function YouthDevelopment() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-yellow-50 to-white py-12 md:py-20">
+        <section className="bg-gradient-to-b from-yellow-50 to-white py-6 md:py-10">
           <div className="container">
             <Link href="/" className="inline-flex items-center text-sm text-gray-500 hover:text-primary mb-6">
               <ChevronLeft className="h-4 w-4 mr-1" />
               Back to Home
             </Link>
 
-            <div className="flex flex-col md:flex-row gap-8 items-center">
+            <div className="flex flex-col md:flex-row gap-4 items-center">
               <div className="md:w-1/2">
                 <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800 mb-4">
                   <UserX className="h-4 w-4 mr-2" />
@@ -105,9 +141,9 @@ export default function YouthDevelopment() {
         </section>
 
         {/* Skills Section */}
-        <section className="py-16 bg-white">
+        <section className="py-8 bg-white">
           <div className="container">
-            <h2 className="text-3xl font-bold text-center mb-12">Skills Development Roadmap</h2>
+            <h2 className="text-3xl font-bold text-center mb-6">Skills Development Roadmap</h2>
 
             <div className="overflow-x-auto">
               <Table>
@@ -196,8 +232,13 @@ export default function YouthDevelopment() {
                       </Button>
                     </TableCell>
                   </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Juggling (Continuous)</TableCell>
+                  <TableRow className="bg-green-50/50">
+                    <TableCell className="font-medium">
+                      Juggling (Continuous)
+                      <div className="inline-flex items-center ml-2 px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                        Free Plan
+                      </div>
+                    </TableCell>
                     <TableCell>
                       <Badge variant="outline" className="bg-yellow-50 text-yellow-700 border-yellow-200">
                         Medium
@@ -222,11 +263,11 @@ export default function YouthDevelopment() {
         </section>
 
         {/* Program Benefits */}
-        <section className="py-16 bg-yellow-50">
+        <section className="py-8 bg-yellow-50">
           <div className="container">
             <h2 className="text-3xl font-bold text-center mb-12">Program Benefits</h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-white p-6 rounded-xl shadow-sm">
                 <div className="h-12 w-12 rounded-full bg-yellow-100 flex items-center justify-center mb-4">
                   <svg
@@ -295,10 +336,10 @@ export default function YouthDevelopment() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-white">
+        <section className="py-8 bg-white">
           <div className="container max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Take Your Game to the Next Level</h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-600 mb-4">
               Join our Youth Development program and receive personalized AI coaching to accelerate your football
               development.
             </p>
@@ -316,7 +357,7 @@ export default function YouthDevelopment() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white text-black py-8 border-t">
+      <footer className="bg-white text-black py-4 border-t">
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
