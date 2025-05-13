@@ -505,24 +505,17 @@ export default function Home() {
             <div id="footer-contact">
               <h3 className="text-base font-bold mb-3">Contact Us</h3>
               <div className="flex items-start">
-                <Mail className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                <div>
-                  <h3 className="font-medium text-sm">Email</h3>
-                  <p className="text-sm text-gray-500">info@superstarsoftomorrow.com</p>
-                </div>
-              </div>
-              <div className="flex items-start">
                 <Phone className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <h3 className="font-medium text-sm">Phone</h3>
-                  <p className="text-sm text-gray-500">+1 (555) 123-4567</p>
+                  <p className="text-sm text-gray-500">+1 (650) 267-4314</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <h3 className="font-medium text-sm">Location</h3>
-                  <p className="text-sm text-gray-500">123 Sports Complex Drive, Football City</p>
+                  <p className="text-sm text-gray-500">1040 Noel Drive, Suite 100-B, Menlo Park, CA 94025</p>
                 </div>
               </div>
             </div>
