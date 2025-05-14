@@ -9,16 +9,15 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             {/* Logo image */}
             <Image
-              src="/images/ssot-logo.png"
+              src="/images/ssot-logo-horizontal.png"
               alt="Superstars of Tomorrow Logo"
-              width={50}
+              width={220}
               height={50}
-              className="square-full"
+              className="h-auto"
             />
-            <span className="text-xl font-bold">Superstars of Tomorrow</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
@@ -445,15 +444,14 @@ export default function Home() {
         <div className="container">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div>
-              <div className="flex items-center gap-2 mb-3">
+              <div className="mb-3">
                 <Image
-                  src="/images/ssot-logo.png"
+                  src="/images/ssot-logo-horizontal.png"
                   alt="Superstars of Tomorrow Logo"
-                  width={40}
+                  width={180}
                   height={40}
-                  className="square-full"
+                  className="h-auto"
                 />
-                <span className="text-lg font-bold">Superstars of Tomorrow</span>
               </div>
               <p className="text-sm text-gray-500">
                 AI-powered football academy developing the next generation of talent.

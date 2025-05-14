@@ -25,15 +25,14 @@ export default function FoundationStage() {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <Image
-              src="/images/ssot-logo.png"
+              src="/images/ssot-logo-horizontal.png"
               alt="Superstars of Tomorrow Logo"
-              width={50}
+              width={220}
               height={50}
-              className="rounded-full"
+              className="h-auto"
             />
-            <span className="text-xl font-bold">Superstars of Tomorrow</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
@@ -359,15 +358,14 @@ export default function FoundationStage() {
       <footer className="bg-white text-black py-4 border-t">
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center gap-2 mb-4 md:mb-0">
+            <div className="mb-4 md:mb-0">
               <Image
-                src="/images/ssot-logo.png"
+                src="/images/ssot-logo-horizontal.png"
                 alt="Superstars of Tomorrow Logo"
-                width={40}
+                width={180}
                 height={40}
-                className="rounded-full"
+                className="h-auto"
               />
-              <span className="text-lg font-bold">Superstars of Tomorrow</span>
             </div>
             <p className="text-gray-500 text-sm">
               © {new Date().getFullYear()} Superstars of Tomorrow. All rights reserved.
