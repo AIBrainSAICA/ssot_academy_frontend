@@ -16,7 +16,7 @@ export default function Home() {
               alt="Superstars of Tomorrow Logo"
               width={50}
               height={50}
-              className="rounded-full"
+              className="square-full"
             />
             <span className="text-xl font-bold">Superstars of Tomorrow</span>
           </div>
@@ -451,7 +451,7 @@ export default function Home() {
                   alt="Superstars of Tomorrow Logo"
                   width={40}
                   height={40}
-                  className="rounded-full"
+                  className="square-full"
                 />
                 <span className="text-lg font-bold">Superstars of Tomorrow</span>
               </div>
