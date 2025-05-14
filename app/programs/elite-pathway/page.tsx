@@ -15,10 +15,10 @@ export default function ElitePathway() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
-              src="https://saiva003.mycafe24.com/wp-content/uploads/2025/03/Logo_aBL_Top.webp"
-              alt="Augmented Brain Labs Logo"
-              width={40}
-              height={40}
+              src="/images/ssot-logo.png"
+              alt="Superstars of Tomorrow Logo"
+              width={50}
+              height={50}
               className="rounded-full"
             />
             <span className="text-xl font-bold">Superstars of Tomorrow</span>
@@ -326,10 +326,10 @@ export default function ElitePathway() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
               <Image
-                src="https://saiva003.mycafe24.com/wp-content/uploads/2025/03/Logo_aBL_Top.webp"
-                alt="Augmented Brain Labs Logo"
-                width={32}
-                height={32}
+                src="/images/ssot-logo.png"
+                alt="Superstars of Tomorrow Logo"
+                width={40}
+                height={40}
                 className="rounded-full"
               />
               <span className="text-lg font-bold">Superstars of Tomorrow</span>

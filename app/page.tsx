@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronRight, Mail, Phone, MapPin, LogIn, UserX, Lock, TrendingDown } from "lucide-react"
+import { ChevronRight, Phone, MapPin, LogIn, UserX, Lock, TrendingDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
@@ -12,10 +12,10 @@ export default function Home() {
           <div className="flex items-center gap-2">
             {/* Logo image */}
             <Image
-              src="https://saiva003.mycafe24.com/wp-content/uploads/2025/03/Logo_aBL_Top.webp"
-              alt="Augmented Brain Labs Logo"
-              width={40}
-              height={40}
+              src="/images/ssot-logo.png"
+              alt="Superstars of Tomorrow Logo"
+              width={50}
+              height={50}
               className="rounded-full"
             />
             <span className="text-xl font-bold">Superstars of Tomorrow</span>
@@ -447,10 +447,10 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 mb-3">
                 <Image
-                  src="https://saiva003.mycafe24.com/wp-content/uploads/2025/03/Logo_aBL_Top.webp"
-                  alt="Augmented Brain Labs Logo"
-                  width={32}
-                  height={32}
+                  src="/images/ssot-logo.png"
+                  alt="Superstars of Tomorrow Logo"
+                  width={40}
+                  height={40}
                   className="rounded-full"
                 />
                 <span className="text-lg font-bold">Superstars of Tomorrow</span>

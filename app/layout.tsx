@@ -9,6 +9,10 @@ export const metadata = {
   title: "Superstars of Tomorrow | AI-Powered Football Youth Academy",
   description:
     "Developing the next generation of football talent with AI-powered training and personalized development programs.",
+  icons: {
+    icon: [{ url: "/favicon.png" }],
+    apple: [{ url: "/favicon.png" }],
+  },
     generator: 'v0.dev'
 }
 
