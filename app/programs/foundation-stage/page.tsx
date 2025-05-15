@@ -357,7 +357,7 @@ export default function FoundationStage() {
       {/* Footer */}
       <footer className="bg-white text-black py-4 border-t">
         <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between">
             <div className="mb-4 md:mb-0">
               <Image
                 src="/images/ssot-logo-horizontal.png"
@@ -367,6 +367,50 @@ export default function FoundationStage() {
                 className="h-auto"
               />
             </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+              <div>
+                <h3 className="text-base font-bold mb-3">Quick Links</h3>
+                <ul className="space-y-1 text-sm">
+                  <li>
+                    <Link href="/" className="text-gray-500 hover:underline">
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/#programs" className="text-gray-500 hover:underline">
+                      Programs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/#coach-section" className="text-gray-500 hover:underline">
+                      For Coaches
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-base font-bold mb-3">Programs</h3>
+                <ul className="space-y-1 text-sm">
+                  <li>
+                    <Link href="/programs/foundation-stage" className="text-gray-500 hover:underline font-medium">
+                      Foundation Stage (6-10)
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/programs/youth-development" className="text-gray-500 hover:underline">
+                      Youth Development (11-15)
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/programs/elite-pathway" className="text-gray-500 hover:underline">
+                      Elite Pathway (16-20)
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-gray-200 mt-6 pt-4 text-center md:text-right">
             <p className="text-gray-500 text-sm">
               © {new Date().getFullYear()} Superstars of Tomorrow. All rights reserved.
             </p>

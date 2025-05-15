@@ -462,8 +462,8 @@ export default function Home() {
               <h3 className="text-base font-bold mb-3">Quick Links</h3>
               <ul className="space-y-1 text-sm">
                 <li>
-                  <Link href="#features" className="text-gray-500 hover:underline">
-                    Features
+                  <Link href="/" className="text-gray-500 hover:underline">
+                    Home
                   </Link>
                 </li>
                 <li>
@@ -472,7 +472,12 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="text-gray-500 hover:underline">
+                  <Link href="#coach-section" className="text-gray-500 hover:underline">
+                    For Coaches
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#footer-contact" className="text-gray-500 hover:underline">
                     Contact
                   </Link>
                 </li>
@@ -483,18 +488,18 @@ export default function Home() {
               <h3 className="text-base font-bold mb-3">Programs</h3>
               <ul className="space-y-1 text-sm">
                 <li>
-                  <Link href="#" className="text-gray-500 hover:underline">
-                    Junior Development
+                  <Link href="/programs/foundation-stage" className="text-gray-500 hover:underline">
+                    Foundation Stage (6-10)
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-500 hover:underline">
-                    Elite Academy
+                  <Link href="/programs/youth-development" className="text-gray-500 hover:underline">
+                    Youth Development (11-15)
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-500 hover:underline">
-                    Pro Pathway
+                  <Link href="/programs/elite-pathway" className="text-gray-500 hover:underline">
+                    Elite Pathway (16-20)
                   </Link>
                 </li>
               </ul>
