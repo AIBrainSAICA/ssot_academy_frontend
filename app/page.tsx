@@ -59,6 +59,68 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Download App Dropdown */}
+            <div className="relative group">
+              <button className="flex items-center text-sm font-medium hover:text-primary transition-colors">
+                <span className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                    />
+                  </svg>
+                  Download App
+                </span>
+                <span className="ml-1 inline-flex items-center px-1.5 py-0.5 rounded-full text-xs font-medium bg-primary text-white">
+                  NEW
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 ml-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-1">
+                  <Link
+                    href="https://play.google.com/store"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    <svg viewBox="0 0 24 24" className="h-4 w-4 mr-2 text-green-600" fill="currentColor">
+                      <path d="M3.609 1.814L13.792 12 3.609 22.186c-.181.181-.29.423-.29.684v.065c0 .36.186.687.491.873l.06.033c.228.125.465.159.709.159.396 0 .791-.132 1.01-.351L17.398 12 5.589 0.351A1.42 1.42 0 004.579 0c-.244 0-.481.034-.709.159l-.06.033A1.043 1.043 0 003.319 1.13v.065c0 .261.109.503.29.684z" />
+                    </svg>
+                    Google Play
+                  </Link>
+                  <Link
+                    href="https://apps.apple.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    <svg viewBox="0 0 24 24" className="h-4 w-4 mr-2 text-gray-800" fill="currentColor">
+                      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                    </svg>
+                    App Store
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             <Link href="#coach-section" className="text-sm font-medium hover:text-primary transition-colors">
               For Coaches
             </Link>
@@ -90,7 +152,7 @@ export default function Home() {
               {/* Left side content */}
               <div>
                 <div>
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight">
                     <span className="text-foreground">Join</span>{" "}
                     <span className="relative inline-block text-primary">
                       SUPERSTARS
@@ -129,6 +191,119 @@ export default function Home() {
                 >
                   Your browser does not support the video tag.
                 </video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Mobile App Promotion Section - Dynamic and Alive */}
+        <section className="py-4 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent relative overflow-hidden">
+          {/* Animated background elements */}
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+            <div className="absolute top-[10%] left-[5%] w-16 h-16 rounded-full bg-primary animate-pulse"></div>
+            <div className="absolute bottom-[20%] right-[10%] w-12 h-12 rounded-full bg-primary animate-ping opacity-30"></div>
+            <div className="absolute top-[40%] right-[20%] w-8 h-8 rounded-full bg-primary animate-bounce opacity-20"></div>
+          </div>
+
+          <div className="container relative z-10">
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              {/* App Screenshots with animation */}
+              <div className="md:w-1/4 relative">
+                <div className="relative h-[180px] w-[100px] mx-auto transform transition-transform hover:scale-105 duration-300">
+                  <div className="absolute inset-0 rounded-xl shadow-lg overflow-hidden border-4 border-black">
+                    <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-transparent animate-pulse"></div>
+                    <div className="relative w-50 h-20 mt-10">
+                      {" "}
+                      {/* width and height control */}
+                      <Image
+                        src="/images/ssot-logo.png"
+                        alt="SSOT Player App"
+                        fill
+                        className="object-contain" // or object-cover depending on your need
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* App Description with animated elements */}
+              <div className="md:w-2/4 text-center md:text-left">
+                <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-primary/30 rounded-full animate-ping opacity-75"></div>
+                    <div className="relative h-7 w-7 bg-primary rounded-full flex items-center justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4 text-white"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-primary mb-0">Superstars of Tomorrow Player App</h3>
+                </div>
+
+                <p className="text-base mb-3 relative">
+                  <span className="font-semibold">Take your training anywhere!</span> Access personalized plans, upload
+                  videos for AI analysis, and track your progress on the go.
+                </p>
+
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-2">
+                  <div className="flex items-center text-sm bg-green-50 text-green-700 px-3 py-1 rounded-full shadow-sm">
+                    <svg viewBox="0 0 24 24" className="h-4 w-4 mr-1 text-yellow-500" fill="currentColor">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <span className="font-medium">4.8&nbsp;</span>
+                    <span>Rating</span>
+                  </div>
+                  <div className="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full shadow-sm">
+                    <span className="font-medium">10K+</span> Downloads
+                  </div>
+                </div>
+              </div>
+
+              {/* Download Buttons with hover effects */}
+              <div className="md:w-1/4 flex flex-row md:flex-col gap-2 mt-3 md:mt-0">
+                <Link href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" passHref>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-gray-300 text-gray-700 hover:bg-primary/10 hover:border-primary hover:text-primary transition-all duration-300 flex items-center justify-center gap-2 group text-sm"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-5 w-5 group-hover:scale-110 transition-transform duration-300"
+                      fill="currentColor"
+                    >
+                      <path d="M3.609 1.814L13.792 12 3.609 22.186c-.181.181-.29.423-.29.684v.065c0 .36.186.687.491.873l.06.033c.228.125.465.159.709.159.396 0 .791-.132 1.01-.351L17.398 12 5.589 0.351A1.42 1.42 0 004.579 0c-.244 0-.481.034-.709.159l-.06.033A1.043 1.043 0 003.319 1.13v.065c0 .261.109.503.29.684z" />
+                    </svg>
+                    Google Play
+                  </Button>
+                </Link>
+                <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" passHref>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-gray-300 text-gray-700 hover:bg-primary/10 hover:border-primary hover:text-primary transition-all duration-300 flex items-center justify-center gap-2 group text-sm"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-5 w-5 group-hover:scale-110 transition-transform duration-300"
+                      fill="currentColor"
+                    >
+                      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                    </svg>
+                    App Store
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -453,9 +628,40 @@ export default function Home() {
                   className="h-auto"
                 />
               </div>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-500 mb-3">
                 AI-powered football academy developing the next generation of talent.
               </p>
+
+              {/* App Download Links */}
+              <div className="space-y-2">
+                <p className="text-sm font-medium">Download Superstars of Tomorrow Player App:</p>
+                <div className="flex gap-2">
+                  <Link href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" passHref>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-gray-300 text-gray-700 hover:bg-primary/10 hover:border-primary hover:text-primary transition-all duration-300 flex items-center justify-center gap-1 text-xs"
+                    >
+                      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
+                        <path d="M3.609 1.814L13.792 12 3.609 22.186c-.181.181-.29.423-.29.684v.065c0 .36.186.687.491.873l.06.033c.228.125.465.159.709.159.396 0 .791-.132 1.01-.351L17.398 12 5.589 0.351A1.42 1.42 0 004.579 0c-.244 0-.481.034-.709.159l-.06.033A1.043 1.043 0 003.319 1.13v.065c0 .261.109.503.29.684z" />
+                      </svg>
+                      Google Play
+                    </Button>
+                  </Link>
+                  <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" passHref>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-gray-300 text-gray-700 hover:bg-primary/10 hover:border-primary hover:text-primary transition-all duration-300 flex items-center justify-center gap-1 text-xs"
+                    >
+                      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                      </svg>
+                      App Store
+                    </Button>
+                  </Link>
+                </div>
+              </div>
             </div>
 
             <div>
@@ -507,20 +713,40 @@ export default function Home() {
 
             <div id="footer-contact">
               <h3 className="text-base font-bold mb-3">Contact Us</h3>
-              <div className="flex items-start">
-                <Phone className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                <div>
-                  <h3 className="font-medium text-sm">Phone</h3>
-                  <p className="text-sm text-gray-500">+1 (650) 267-4314</p>
+              
+              {/* Switzerland Office */}
+              <div className="mb-4">
+                <h4 className="font-medium text-sm text-primary mb-1">Switzerland Office</h4>
+                <div className="flex items-start">
+                  <MapPin className="h-4 w-4 text-primary mr-2 mt-0.5" />
+                  <div>
+                    <p className="text-xs text-gray-500">Rte des Flumeaux 42, Prilly Vaud, Suisse</p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-start">
-                <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                <div>
-                  <h3 className="font-medium text-sm">Location</h3>
-                  <p className="text-sm text-gray-500">1040 Noel Drive, Suite 100-B, Menlo Park, CA 94025</p>
+
+              {/* German Office */}
+              <div className="mb-4">
+                <h4 className="font-medium text-sm text-primary mb-1">German Office</h4>
+                <div className="flex items-start">
+                  <MapPin className="h-4 w-4 text-primary mr-2 mt-0.5" />
+                  <div>
+                    <p className="text-xs text-gray-500">Bismarckstraße 10-12, 10625 Berlin, Germany</p>
+                  </div>
                 </div>
               </div>
+
+              {/* US Office */}
+              <div className="mb-4">
+                <h4 className="font-medium text-sm text-primary mb-1">US Office</h4>
+                <div className="flex items-start">
+                  <MapPin className="h-4 w-4 text-primary mr-2 mt-0.5" />
+                  <div>
+                    <p className="text-xs text-gray-500">1040 Noel Drive, Suite 100-B, Menlo Park, CA 94025</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
