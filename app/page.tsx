@@ -129,14 +129,14 @@ export default function Home() {
             </Link>
           </nav>
           <div className="flex items-center gap-2">
-            <Link href="https://old-quail-54.telebit.io/login" passHref>
+            <Link href="http://3.129.44.216:5001/login" passHref>
               <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/5">
                 <LogIn className="h-4 w-4 mr-1" />
                 Login
               </Button>
             </Link>
 
-            <Link href="https://old-quail-54.telebit.io/register" passHref>
+            <Link href="http://3.129.44.216:5001/register" passHref>
               <Button className="bg-primary hover:bg-primary/90">Register Now</Button>
             </Link>
           </div>
@@ -171,7 +171,7 @@ export default function Home() {
                 </p>
 
                 <div className="mt-8">
-                  <Link href="https://old-quail-54.telebit.io/register" passHref>
+                  <Link href="http://3.129.44.216:5001/register" passHref>
                     <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold">
                       Start Free Trial <ChevronRight className="ml-1 h-5 w-5" />
                     </Button>
@@ -365,7 +365,7 @@ export default function Home() {
                         Learn More
                       </Button>
                     </Link>
-                    <Link href="https://old-quail-54.telebit.io/register?plan=free&program=foundation" passHref>
+                    <Link href="http://3.129.44.216:5001/register?plan=free&program=foundation" passHref>
                       <Button className="w-full bg-primary hover:bg-primary/90 text-white" size="sm">
                         Start Free
                       </Button>
@@ -422,7 +422,7 @@ export default function Home() {
                         Learn More
                       </Button>
                     </Link>
-                    <Link href="https://old-quail-54.telebit.io/register?plan=free&program=youth" passHref>
+                    <Link href="http://3.129.44.216:5001/register?plan=free&program=youth" passHref>
                       <Button className="w-full bg-primary hover:bg-primary/90 text-white" size="sm">
                         Start Free
                       </Button>
@@ -479,7 +479,7 @@ export default function Home() {
                         Learn More
                       </Button>
                     </Link>
-                    <Link href="https://old-quail-54.telebit.io/register?plan=free&program=elite" passHref>
+                    <Link href="http://3.129.44.216:5001/register?plan=free&program=elite" passHref>
                       <Button className="w-full bg-primary hover:bg-primary/90 text-white" size="sm">
                         Start Free
                       </Button>
@@ -604,7 +604,7 @@ export default function Home() {
               tomorrow.
             </p>
             <div className="mt-6 flex justify-center">
-              <Link href="https://old-quail-54.telebit.io/register" passHref>
+              <Link href="http://3.129.44.216:5001/register" passHref>
                 <Button size="lg" className="bg-white text-primary border border-primary hover:bg-gray-100">
                   Register Now
                 </Button>

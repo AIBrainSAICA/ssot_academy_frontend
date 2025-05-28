@@ -70,12 +70,12 @@ export default function ElitePathway() {
             </Link>
           </nav>
           <div className="flex items-center gap-2">
-            <Link href="https://old-quail-54.telebit.io/login" passHref>
+            <Link href="http://3.129.44.216:5001/login" passHref>
               <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/5">
                 Login
               </Button>
             </Link>
-            <Link href="https://old-quail-54.telebit.io/register" passHref>
+            <Link href="http://3.129.44.216:5001/register" passHref>
               <Button className="bg-primary hover:bg-primary/90">Register Now</Button>
             </Link>
           </div>
