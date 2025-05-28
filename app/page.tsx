@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ChevronRight, Phone, MapPin, LogIn, UserX, Lock, TrendingDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
