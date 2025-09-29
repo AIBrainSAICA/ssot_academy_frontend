@@ -26,7 +26,7 @@ export default function Icon() {
       }}
     >
       <img
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ssot-logo-JCDCAuFYzwJMRS4QUKzbA7VWD1QQXh.png"
+        src="/images/design-mode/ssot-logo.png"
         width="180"
         height="180"
         alt="SSoT Logo"
