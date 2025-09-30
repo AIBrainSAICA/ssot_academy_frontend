@@ -38,7 +38,7 @@ export default function Home() {
                 </p>
 
                 <div className="mt-8">
-                  <Link href="http://3.129.44.216:5001/register" passHref>
+                  <Link href="http://18.191.72.169:5001/register" passHref>
                     <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold">
                       Start Free Trial <ChevronRight className="ml-1 h-5 w-5" />
                     </Button>
@@ -232,7 +232,7 @@ export default function Home() {
                         Learn More
                       </Button>
                     </Link>
-                    <Link href="http://3.129.44.216:5001/register?plan=free&program=foundation" passHref>
+                    <Link href="http://18.191.72.169:5001/register?plan=free&program=foundation" passHref>
                       <Button className="w-full bg-primary hover:bg-primary/90 text-white" size="sm">
                         Start Free
                       </Button>
@@ -289,7 +289,7 @@ export default function Home() {
                         Learn More
                       </Button>
                     </Link>
-                    <Link href="http://3.129.44.216:5001/register?plan=free&program=youth" passHref>
+                    <Link href="http://18.191.72.169:5001/register?plan=free&program=youth" passHref>
                       <Button className="w-full bg-primary hover:bg-primary/90 text-white" size="sm">
                         Start Free
                       </Button>
@@ -346,7 +346,7 @@ export default function Home() {
                         Learn More
                       </Button>
                     </Link>
-                    <Link href="http://3.129.44.216:5001/register?plan=free&program=elite" passHref>
+                    <Link href="http://18.191.72.169:5001/register?plan=free&program=elite" passHref>
                       <Button className="w-full bg-primary hover:bg-primary/90 text-white" size="sm">
                         Start Free
                       </Button>
@@ -471,7 +471,7 @@ export default function Home() {
               tomorrow.
             </p>
             <div className="mt-6 flex justify-center">
-              <Link href="http://3.129.44.216:5001/register" passHref>
+              <Link href="http://18.191.72.169:5001/register" passHref>
                 <Button size="lg" className="bg-white text-primary border border-primary hover:bg-gray-100">
                   Register Now
                 </Button>
