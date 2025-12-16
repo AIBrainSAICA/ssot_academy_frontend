@@ -25,7 +25,7 @@ export default function DeleteAccountPage() {
     setMessage(null)
 
     try {
-      const response = await fetch("https://ssot.saiva.football:5002/request-deletion", {
+      const response = await fetch("https://ssot.saiva.football:5005/request-deletion", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
