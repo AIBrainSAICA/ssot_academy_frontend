@@ -85,13 +85,20 @@
   }
 }
 
-/* Custom styles */
+/* Enhanced custom styles for better visual polish */
 .shadow-glow {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 .shadow-glow-red {
   box-shadow: 0 0 10px rgba(162, 42, 41, 0.5);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 /* Animation for analysis points */
