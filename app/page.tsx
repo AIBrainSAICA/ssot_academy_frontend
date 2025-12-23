@@ -329,7 +329,7 @@ export default function Home() {
               </div>
               <div className="relative h-[350px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
                 <Image
-                  src="https://www.ssot.football/images/design-mode/122412430.jpg"
+                  src="/images/design-mode/122412430(1).jpg"
                   alt="SSOT App Training in Action"
                   fill
                   className="object-cover"
