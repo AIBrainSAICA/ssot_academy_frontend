@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import GoogleAnalytics from "@/components/google-analytics"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -33,6 +34,7 @@ export default function RootLayout({
           <ScrollToTop />
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
