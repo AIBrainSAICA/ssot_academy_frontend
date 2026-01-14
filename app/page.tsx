@@ -32,7 +32,7 @@ export default function Home() {
                 </h1>
 
                 <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-xl">
-                  AI-powered football training that works with just your smartphone's front camera — no extra hardware,
+                  AI-powered football training app that works with just your smartphone's front camera — no extra hardware,
                   no setup.
                 </p>
 
@@ -109,9 +109,9 @@ export default function Home() {
                 },
                 {
                   icon: Target,
-                  title: "On-screen Guidance",
+                  title: "On-screen AR Guidance",
                   description:
-                    "Visual cues and instructions overlay on your camera view to guide you through every drill perfectly.",
+                    "AR-based visual cues and instructions overlay your camera view to guide you through every drill.",
                 },
                 {
                   icon: Trophy,
@@ -150,7 +150,7 @@ export default function Home() {
                   ),
                   title: "Multiple Skills",
                   description:
-                    "Train across various football skills from dribbling to shooting, not limited to one category.",
+                    "Train across essential football skills like dribbling, agility, movement, and reactions, all powered by real-time AI.",
                 },
               ].map((feature, index) => (
                 <div
@@ -183,7 +183,7 @@ export default function Home() {
                 {
                   title: "100% Phone-Based",
                   description:
-                    "No wearables, no sensors, no extra equipment. Just your smartphone and you're ready to train.",
+                    "No wearables, no sensors. Just your smartphone and you're ready to train anytime, anywhere.",
                 },
                 {
                   title: "Instant In-Drill Feedback",
@@ -192,7 +192,7 @@ export default function Home() {
                 },
                 {
                   title: "Multiple Football Skills",
-                  description: "Train dribbling, shooting, passing, and more. Not limited to one skill category.",
+                  description: "Train dribbling, agility, and reaction skills through fun and interactive drills.",
                 },
                 {
                   title: "Personalized Progression",
