@@ -128,7 +128,7 @@ export default function PrivacyPolicy() {
                         <p className="text-gray-700 mb-4">Richard Shinn, CEO</p>
 
                         <p className="text-gray-700">
-                          <strong>E-mail address:</strong> privacy@superstarstomorrow.com
+                          <strong>E-mail address:</strong> ssot@aibrain.com
                         </p>
                       </div>
                     </section>
