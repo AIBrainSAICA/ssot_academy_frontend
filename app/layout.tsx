@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import GoogleAnalytics from "@/components/google-analytics"
+import { LanguageProvider } from "@/lib/i18n/language-context"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -30,8 +31,10 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <ScrollToTop />
-          {children}
+          <LanguageProvider>
+            <ScrollToTop />
+            {children}
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
