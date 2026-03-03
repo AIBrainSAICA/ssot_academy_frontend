@@ -9,7 +9,7 @@ import { LanguageProvider } from "@/lib/i18n/language-context"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Superstars of Tomorrow | AI-Powered Football Youth Academy",
+  title: "Superstars of Tomorrow | AI-Powered Football Training App",
   description:
     "Developing the next generation of football talent with AI-powered training and personalized development programs.",
   icons: {
@@ -26,9 +26,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <GoogleAnalytics />
-      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <LanguageProvider>
@@ -36,6 +33,7 @@ export default function RootLayout({
             {children}
           </LanguageProvider>
         </ThemeProvider>
+        <GoogleAnalytics />
       </body>
     </html>
   )

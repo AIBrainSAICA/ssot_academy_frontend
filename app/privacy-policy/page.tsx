@@ -45,6 +45,8 @@ export default function PrivacyPolicy() {
     { id: "third-countries", title: "Data Processing in Third Countries" },
     { id: "erasure", title: "Erasure of Data" },
     { id: "cookies", title: "Use of Cookies" },
+    { id: "app-data", title: "Mobile App Data Collection and Consent" },
+    { id: "leaderboard", title: "Leaderboard and Performance Data" },
     { id: "business-services", title: "Business Services" },
     { id: "web-hosting", title: "Provision of Online Services and Web Hosting" },
     { id: "contact-management", title: "Contact and Inquiry Management" },
@@ -95,7 +97,7 @@ export default function PrivacyPolicy() {
                   <h1 className="text-4xl font-bold mb-8 text-foreground">Privacy Policy</h1>
 
                   <p className="text-gray-600 mb-8">
-                    <strong>Last updated:</strong> Sep 25, 2025
+                    <strong>Last updated:</strong> Mar 3, 2026
                   </p>
 
                   <div className="space-y-12">
@@ -317,6 +319,100 @@ export default function PrivacyPolicy() {
                               deleted
                             </li>
                           </ul>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section id="app-data">
+                      <h2 className="text-2xl font-bold mb-4 text-foreground">Mobile App Data Collection and Consent</h2>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        Our mobile application ("SSOT App") collects and processes certain personal data to provide AI-powered football training features. By using the App, you acknowledge and consent to the collection and processing of the following data:
+                      </p>
+
+                      <div className="space-y-4">
+                        <div>
+                          <h3 className="text-xl font-semibold mb-3 text-foreground">Data Collected Through the App</h3>
+                          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                            <li><strong>Account information:</strong> Name, email address, age, and profile details provided during registration</li>
+                            <li><strong>Training performance data:</strong> Drill scores, completion rates, training session duration, and skill assessment results</li>
+                            <li><strong>Video and camera data:</strong> Video recordings captured during training sessions for AI-powered real-time feedback and form analysis</li>
+                            <li><strong>Device information:</strong> Device model, operating system version, app version, and unique device identifiers</li>
+                            <li><strong>Usage data:</strong> App feature interactions, session frequency, and training preferences</li>
+                          </ul>
+                        </div>
+
+                        <div>
+                          <h3 className="text-xl font-semibold mb-3 text-foreground">Purpose of Data Collection</h3>
+                          <p className="text-gray-700 leading-relaxed mb-2">The data collected through the App is used for the following purposes:</p>
+                          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                            <li>Providing personalized AI-driven training recommendations and feedback</li>
+                            <li>Tracking and displaying your training progress and performance over time</li>
+                            <li>Populating global and regional leaderboards with your training scores (see Leaderboard section below)</li>
+                            <li>Improving our AI models and training content quality</li>
+                            <li>Ensuring app security and preventing abuse</li>
+                          </ul>
+                        </div>
+
+                        <div className="bg-amber-50 border border-amber-200 p-4 rounded-lg">
+                          <h4 className="font-semibold text-amber-900 mb-2">User Consent</h4>
+                          <p className="text-amber-800 text-sm">
+                            By creating an account and using the SSOT App, you explicitly consent to the collection, processing, and storage of the data described above. You may withdraw your consent at any time by deleting your account through the App or by contacting us at ssot@aibrain.com. Please note that withdrawing consent may affect your ability to use certain features of the App.
+                          </p>
+                        </div>
+
+                        <div>
+                          <h3 className="text-xl font-semibold mb-3 text-foreground">Data Related to Minors</h3>
+                          <p className="text-gray-700 leading-relaxed">
+                            Our App may be used by individuals under the age of 16 with the consent of a parent or legal guardian. Parents or guardians are responsible for supervising the use of the App and may request access to, modification of, or deletion of their child's data at any time by contacting us at ssot@aibrain.com.
+                          </p>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section id="leaderboard">
+                      <h2 className="text-2xl font-bold mb-4 text-foreground">Leaderboard and Performance Data</h2>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        The SSOT App features a global leaderboard system that displays user training performance scores and rankings. By using the App and participating in training drills, your performance data may be uploaded to our servers and displayed on leaderboards visible to other users.
+                      </p>
+
+                      <div className="space-y-4">
+                        <div>
+                          <h3 className="text-xl font-semibold mb-3 text-foreground">What Data Is Shared on Leaderboards</h3>
+                          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                            <li><strong>Display name or username:</strong> Your chosen display name as shown on the leaderboard</li>
+                            <li><strong>Training scores:</strong> Performance scores achieved during training drills and exercises</li>
+                            <li><strong>Rankings:</strong> Your position relative to other users on global and regional leaderboards</li>
+                            <li><strong>Profile picture:</strong> If provided, your profile image may be visible alongside your ranking</li>
+                          </ul>
+                        </div>
+
+                        <div className="bg-red-50 border border-red-200 p-4 rounded-lg">
+                          <h4 className="font-semibold text-red-900 mb-2">Consent for Leaderboard Participation</h4>
+                          <p className="text-red-800 text-sm mb-2">
+                            <strong>By using the SSOT App, you acknowledge and consent to the following:</strong>
+                          </p>
+                          <ul className="list-disc pl-6 space-y-1 text-red-800 text-sm">
+                            <li>Your training scores and performance data will be uploaded to our servers</li>
+                            <li>Your display name and scores may be visible to other users through the global leaderboard</li>
+                            <li>Your ranking position may be publicly viewable within the App</li>
+                          </ul>
+                          <p className="text-red-800 text-sm mt-2">
+                            You may opt out of the leaderboard at any time by adjusting your privacy settings within the App or by contacting us at ssot@aibrain.com. Opting out will remove your data from public leaderboard displays, though your scores will still be stored for your personal training progress tracking.
+                          </p>
+                        </div>
+
+                        <div>
+                          <h3 className="text-xl font-semibold mb-3 text-foreground">Data Retention for Leaderboard</h3>
+                          <p className="text-gray-700 leading-relaxed">
+                            Leaderboard data is retained for as long as your account is active. Upon account deletion, your leaderboard entries will be removed within 30 days. Anonymized and aggregated performance data may be retained for analytical and service improvement purposes.
+                          </p>
+                        </div>
+
+                        <div>
+                          <h3 className="text-xl font-semibold mb-3 text-foreground">Third-Party Access</h3>
+                          <p className="text-gray-700 leading-relaxed">
+                            Leaderboard data is processed and stored on our secure servers. We do not sell or share individual leaderboard performance data with third parties for marketing purposes. Data may be shared with service providers who assist in operating the leaderboard infrastructure, subject to appropriate data processing agreements.
+                          </p>
                         </div>
                       </div>
                     </section>
