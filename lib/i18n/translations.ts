@@ -276,6 +276,146 @@ export const translations = {
     joinRevolutionDesc: "Descarga SSOT hoy mismo y experimenta el futuro del entrenamiento futbolístico",
     mvpEarlyAccessAppStore: "MVP - Acceso anticipado | App Store Próximamente",
   },
+  pt: {
+    // Navigation
+    home: "Início",
+    about: "Sobre nós",
+    contact: "Contato",
+    account: "Minha conta",
+    login: "Entrar",
+    createAccount: "Criar conta",
+    downloadApp: "Baixar o App",
+
+    // Hero Section
+    trainSmarter: "Treine melhor.",
+    anywhere: "Em qualquer lugar.",
+    heroDescription:
+      "O aplicativo de treino de futebol com inteligência artificial que funciona apenas com a câmera frontal do seu celular — sem equipamentos adicionais e sem configurações.",
+    downloadGooglePlay: "Baixar no Google Play",
+    appStoreComingSoon: "App Store (em breve)",
+    mvpEarlyAccess: "MVP · Acesso antecipado",
+
+    // What SSOT Does
+    whatSsotDoes: "O que o SSOT faz",
+    whatSsotDoesSubtitle: "Tudo o que você precisa para treinar como um profissional, onde e quando quiser",
+    realTimeAiTracking: "Monitoramento de IA em tempo real",
+    realTimeAiTrackingDesc:
+      "Receba feedback instantâneo durante os exercícios. Nossa IA analisa seus movimentos enquanto você treina, sem precisar esperar após a sessão.",
+    onScreenArGuidance: "Orientação em Realidade Aumentada (AR)",
+    onScreenArGuidanceDesc:
+      "Indicadores visuais em Realidade Aumentada são projetados sobre a imagem da câmera para guiar você em cada exercício.",
+    dailyChallenges: "Desafios Diários",
+    dailyChallengesDesc:
+      "Desafios personalizados mantêm você motivado e ajudam a criar consistência na sua rotina de treinos.",
+    progressTracking: "Acompanhe seu Progresso",
+    progressTrackingDesc:
+      "Veja seu histórico de desempenho e acompanhe sua evolução ao longo do tempo com estatísticas detalhadas.",
+    mobileOnly: "Tudo no Celular",
+    mobileOnlyDesc:
+      "Sem uploads nem dispositivos extras. Tudo acontece instantaneamente no seu celular usando apenas a câmera frontal.",
+    multipleSkills: "Múltiplas Habilidades",
+    multipleSkillsDesc:
+      "Treine habilidades essenciais do futebol, como drible, agilidade, movimentação e reação, tudo com inteligência artificial em tempo real.",
+
+    // Why SSOT
+    whySsot: "Por que o SSOT",
+    whySsotSubtitle: "O que torna o SSOT diferente dos métodos tradicionais de treinamento.",
+    phoneBased: "100% no Celular",
+    phoneBasedDesc:
+      "Sem acessórios nem sensores. Apenas seu celular e você está pronto para treinar a qualquer hora, em qualquer lugar.",
+    instantFeedback: "Feedback em Tempo Real",
+    instantFeedbackDesc:
+      "Receba correções em tempo real enquanto treina, e não horas depois ao enviar vídeos para análise.",
+    multipleFootballSkills: "Múltiplas Habilidades do Futebol",
+    multipleFootballSkillsDesc:
+      "Treine drible, agilidade e tempo de reação com exercícios divertidos e interativos.",
+    personalizedProgression: "Evolução Personalizada",
+    personalizedProgressionDesc:
+      "Como ter um treinador digital que se adapta ao seu nível e cria planos de treino personalizados.",
+
+    // Who It's For
+    whoItsFor: "Para quem é",
+    players: "Jogadores",
+    playersDesc: "Baixe hoje o aplicativo SSOT Player e comece a treinar melhor.",
+    downloadNow: "Baixar agora",
+    parentsCoaches: "Pais e Treinadores",
+    parentsCoachesDesc: "Em breve: Painel Academy para acompanhar a evolução dos jogadores.",
+    comingSoon: "Em breve",
+
+    // CTA Section
+    startTrainingSmarter: "Comece a treinar melhor",
+    ctaDescription: "Junte-se a milhares de jogadores que estão evoluindo com treinos guiados por inteligência artificial.",
+    appStoreVersionComingSoon: "Versão para App Store em breve",
+
+    // Contact Section
+    contactFeedback: "Contato e Feedback",
+    contactDescription: "Tem dúvidas ou sugestões? Adoraríamos ouvir você.",
+
+    // Footer
+    aiPoweredApp: "Aplicativo de treino de futebol com IA.",
+    trainSmarterAnywhere: "Treine melhor, em qualquer lugar.",
+    quickLinks: "Links rápidos",
+    aboutUs: "Sobre nós",
+    download: "Baixar",
+    googlePlay: "Google Play",
+    appStoreSoon: "App Store (em breve)",
+    email: "E-mail",
+    globalOffices: "Escritórios Globais",
+    prillySwitzerland: "Prilly, Suíça",
+    berlinGermany: "Berlim, Alemanha",
+    menloParkCa: "Menlo Park, CA",
+    copyright: "© 2026 Superstars of Tomorrow.",
+    allRightsReserved: "Todos os direitos reservados.",
+    privacyPolicy: "Política de Privacidade",
+
+    // About Page
+    aboutSsot: "Sobre o Superstars of Tomorrow",
+    aboutHeroDesc:
+      "Estamos revolucionando o treino de futebol com tecnologia de inteligência artificial que funciona apenas com o seu celular.",
+    aboutHeroDesc2:
+      "Sem acessórios, sem sensores, sem configurações complicadas, apenas feedback inteligente em tempo real para ajudar você a treinar melhor, em qualquer lugar.",
+    aboutHeroDesc3:
+      "Fundado por entusiastas apaixonados por futebol e especialistas em tecnologia, o Superstars of Tomorrow tem como missão tornar o treino de nível profissional acessível a todos os jogadores, independentemente da localização ou dos recursos disponíveis.",
+    ourMission: "Nossa Missão",
+    ourMissionDesc:
+      "Democratizar o treino de futebol de alto nível, oferecendo orientação em tempo real com inteligência artificial por meio de um aplicativo simples no celular. Acreditamos que todo jogador merece acesso a feedback de nível profissional, independentemente de sua localização ou recursos.",
+    ourVision: "Nossa Visão",
+    ourVisionDesc:
+      "Tornar o SSOT o padrão global em treinos esportivos com inteligência artificial, criando um mundo onde todo atleta em formação tenha acesso a um treinamento inteligente e personalizado, que se adapta às suas necessidades e o ajuda a alcançar seu máximo potencial.",
+    ourStory: "Nossa História",
+    ourStoryP1:
+      "A Superstars of Tomorrow nasceu de uma observação simples: jogadores talentosos ao redor do mundo não têm acesso a orientações de qualidade e em tempo real.",
+    ourStoryP2:
+      "Os métodos tradicionais de treinamento exigem equipamentos caros, treinadores profissionais ou análises de vídeo complexas que levam horas.",
+    ourStoryP3:
+      "Unindo décadas de experiência no futebol profissional com tecnologia avançada de inteligência artificial, nossos fundadores decidiram resolver esse problema.",
+    ourStoryP4:
+      "Utilizando visão computacional e machine learning que rodam diretamente no seu celular, criamos um aplicativo capaz de oferecer feedback profissional instantâneo usando apenas a câmera frontal do seu celular.",
+    ourStoryP5:
+      "Hoje, temos orgulho de atender milhares de jogadores por meio do nosso programa de acesso antecipado (MVP), ajudando-os a evoluir com desafios diários personalizados, acompanhamento em tempo real e análises inteligentes de progresso, tudo isso sem qualquer hardware adicional.",
+    whatMakesUsDifferent: "O Que Nos Torna Diferentes",
+    coachesCollaboration:
+      "Nossos exercícios são desenvolvidos em conjunto com treinadores de clubes e academias profissionais de toda a Europa, garantindo que você treine com métodos utilizados pelos melhores times do mundo.",
+    mobileFirst: "Mobile First",
+    mobileFirstDesc:
+      "Sem acessórios, sensores ou uploads. Tudo acontece instantaneamente no seu celular usando visão computacional.",
+    realTimeFeedback: "Feedback em Tempo Real",
+    realTimeFeedbackDesc:
+      "Receba correções instantâneas durante o treino, não horas depois. Nossa IA analisa seus movimentos enquanto você treina.",
+    personalizedTraining: "Treinos Personalizados",
+    personalizedTrainingDesc:
+      "Desafios diários adaptativos e acompanhamento de progresso que se ajustam ao seu nível de habilidade e aos seus objetivos.",
+    globalPresence: "Presença Global",
+    switzerlandOffice: "Escritório na Suíça",
+    europeanHq: "Sede Europeia",
+    germanOffice: "Escritório na Alemanha",
+    centralEuropeanOps: "Operações da Europa Central",
+    usOffice: "Escritório nos Estados Unidos",
+    northAmericanHq: "Sede da América do Norte",
+    joinRevolution: "Junte-se à revolução",
+    joinRevolutionDesc: "Baixe o SSOT hoje e experimente o futuro do treino de futebol",
+    mvpEarlyAccessAppStore: "MVP · Acesso antecipado | Versão para App Store em breve",
+  },
 } as const
 
 export type Language = keyof typeof translations
