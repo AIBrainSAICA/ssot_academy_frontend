@@ -16,7 +16,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem("ssot-language") as Language
-    if (savedLanguage && (savedLanguage === "en" || savedLanguage === "es")) {
+    if (savedLanguage && (savedLanguage === "en" || savedLanguage === "es" || savedLanguage === "pt")) {
       setLanguageState(savedLanguage)
     }
   }, [])

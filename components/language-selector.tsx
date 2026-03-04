@@ -8,6 +8,7 @@ import { useLanguage } from "@/lib/i18n/language-context"
 const languages = [
   { code: "en" as const, name: "English", flag: "🇬🇧" },
   { code: "es" as const, name: "Español", flag: "🇪🇸" },
+  { code: "pt" as const, name: "Português", flag: "🇧🇷" },
 ]
 
 export function LanguageSelector() {
