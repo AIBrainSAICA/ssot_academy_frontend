@@ -186,16 +186,27 @@ export function AboutContent() {
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4 text-foreground">{t("joinRevolution")}</h2>
           <p className="text-lg text-gray-600 mb-8">{t("joinRevolutionDesc")}</p>
-          <Link
-            href="https://play.google.com/store/apps/details?id=com.aibrain.ssot"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              {t("downloadGooglePlay")}
-            </Button>
-          </Link>
-          <p className="text-sm text-gray-500 mt-4">{t("mvpEarlyAccessAppStore")}</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="https://play.google.com/store/apps/details?id=com.aibrain.ssot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                {t("downloadGooglePlay")}
+              </Button>
+            </Link>
+            <Link
+              href="https://apps.apple.com/us/app/ssot-ai-football-training/id6756636923"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="outline" className="bg-transparent">
+                {t("downloadAppStore")}
+              </Button>
+            </Link>
+          </div>
+          <p className="text-sm text-gray-500 mt-4">{t("mvpEarlyAccess")}</p>
         </div>
       </section>
     </main>

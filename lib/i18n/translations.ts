@@ -15,7 +15,7 @@ export const translations = {
     heroDescription:
       "AI-powered football training app that works with just your smartphone's front camera — no extra hardware, no setup.",
     downloadGooglePlay: "Download on Google Play",
-    appStoreComingSoon: "App Store (Coming Soon)",
+    appStoreComingSoon: "Download on App Store",
     mvpEarlyAccess: "MVP · Early Access",
 
     // What SSOT Does
@@ -66,7 +66,7 @@ export const translations = {
     // CTA Section
     startTrainingSmarter: "Start Training Smarter",
     ctaDescription: "Join thousands of players improving their skills with AI-powered training",
-    appStoreVersionComingSoon: "App Store version coming soon",
+    appStoreVersionComingSoon: "Also available on the App Store",
 
     // Contact Section
     contactFeedback: "Contact & Feedback",
@@ -79,7 +79,8 @@ export const translations = {
     aboutUs: "About Us",
     download: "Download",
     googlePlay: "Google Play",
-    appStoreSoon: "App Store (Soon)",
+    appStore: "App Store",
+    appStoreSoon: "App Store",
     email: "Email",
     globalOffices: "Global Offices",
     prillySwitzerland: "Prilly, Switzerland",
@@ -134,7 +135,8 @@ export const translations = {
     northAmericanHq: "North American Headquarters",
     joinRevolution: "Join the Revolution",
     joinRevolutionDesc: "Download SSOT today and experience the future of football training",
-    mvpEarlyAccessAppStore: "MVP · Early Access | App Store Coming Soon",
+    mvpEarlyAccessAppStore: "MVP · Early Access",
+    downloadAppStore: "Download on App Store",
   },
   es: {
     // Navigation
@@ -152,7 +154,7 @@ export const translations = {
     heroDescription:
       "Aplicación de entrenamiento de fútbol impulsada por inteligencia artificial que funciona con la cámara frontal de tu teléfono, sin hardware adicional ni configuración.",
     downloadGooglePlay: "Descargar en Google Play",
-    appStoreComingSoon: "App Store (Próximamente)",
+    appStoreComingSoon: "Descargar en App Store",
     mvpEarlyAccess: "MVP - Acceso Anticipado",
 
     // What SSOT Does
@@ -205,7 +207,7 @@ export const translations = {
     // CTA Section
     startTrainingSmarter: "Empieza a Entrenar con Inteligencia",
     ctaDescription: "Únete a miles de jugadores que mejoran sus habilidades con el entrenamiento basado en IA.",
-    appStoreVersionComingSoon: "Próximamente en la App Store",
+    appStoreVersionComingSoon: "También disponible en la App Store",
 
     // Contact Section
     contactFeedback: "Contacto y Feedback",
@@ -218,7 +220,8 @@ export const translations = {
     aboutUs: "Sobre Nosotros",
     download: "Descargar",
     googlePlay: "Google Play",
-    appStoreSoon: "App Store (próximamente)",
+    appStore: "App Store",
+    appStoreSoon: "App Store",
     email: "Correo electrónico",
     globalOffices: "Oficinas Mundiales",
     prillySwitzerland: "Prilly, Suiza",
@@ -274,7 +277,8 @@ export const translations = {
     northAmericanHq: "Sede Norteamericana",
     joinRevolution: "Únete a la Revolución",
     joinRevolutionDesc: "Descarga SSOT hoy mismo y experimenta el futuro del entrenamiento futbolístico",
-    mvpEarlyAccessAppStore: "MVP - Acceso anticipado | App Store Próximamente",
+    mvpEarlyAccessAppStore: "MVP - Acceso anticipado",
+    downloadAppStore: "Descargar en App Store",
   },
   pt: {
     // Navigation
@@ -292,7 +296,7 @@ export const translations = {
     heroDescription:
       "O aplicativo de treino de futebol com inteligência artificial que funciona apenas com a câmera frontal do seu celular — sem equipamentos adicionais e sem configurações.",
     downloadGooglePlay: "Baixar no Google Play",
-    appStoreComingSoon: "App Store (em breve)",
+    appStoreComingSoon: "Baixar na App Store",
     mvpEarlyAccess: "MVP · Acesso antecipado",
 
     // What SSOT Does
@@ -345,7 +349,7 @@ export const translations = {
     // CTA Section
     startTrainingSmarter: "Comece a treinar melhor",
     ctaDescription: "Junte-se a milhares de jogadores que estão evoluindo com treinos guiados por inteligência artificial.",
-    appStoreVersionComingSoon: "Versão para App Store em breve",
+    appStoreVersionComingSoon: "Também disponível na App Store",
 
     // Contact Section
     contactFeedback: "Contato e Feedback",
@@ -358,7 +362,8 @@ export const translations = {
     aboutUs: "Sobre nós",
     download: "Baixar",
     googlePlay: "Google Play",
-    appStoreSoon: "App Store (em breve)",
+    appStore: "App Store",
+    appStoreSoon: "App Store",
     email: "E-mail",
     globalOffices: "Escritórios Globais",
     prillySwitzerland: "Prilly, Suíça",
@@ -414,7 +419,8 @@ export const translations = {
     northAmericanHq: "Sede da América do Norte",
     joinRevolution: "Junte-se à revolução",
     joinRevolutionDesc: "Baixe o SSOT hoje e experimente o futuro do treino de futebol",
-    mvpEarlyAccessAppStore: "MVP · Acesso antecipado | Versão para App Store em breve",
+    mvpEarlyAccessAppStore: "MVP · Acesso antecipado",
+    downloadAppStore: "Baixar na App Store",
   },
 } as const
 
