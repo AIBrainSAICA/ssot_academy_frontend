@@ -29,8 +29,6 @@ export default function RootLayout({
       <head>
         {/* Google tag (gtag.js) */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QTKR61DYG5" strategy="beforeInteractive" />
-      </head>
-      <body className={inter.className}>
         <Script
           id="gtag-config"
           strategy="beforeInteractive"
@@ -43,6 +41,8 @@ export default function RootLayout({
             `,
           }}
         />
+      </head>
+      <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <LanguageProvider>
             <ScrollToTop />
