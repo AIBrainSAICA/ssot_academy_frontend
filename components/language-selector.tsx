@@ -12,11 +12,11 @@ const languages = [
 ]
 
 const getFlagEmoji = (countryCode: string) => {
-  const codePoints = countryCode
-    .toUpperCase()
-    .split("")
-    .map((char) => 127397 + char.charCodeAt(0))
-  return String.fromCodePoint(...codePoints)
+  const chars = countryCode.toUpperCase().split("")
+  if (chars.length !== 2) return countryCode
+  const codePoint1 = 0x1f1e6 + chars[0].charCodeAt(0) - 0x41
+  const codePoint2 = 0x1f1e6 + chars[1].charCodeAt(0) - 0x41
+  return String.fromCodePoint(codePoint1, codePoint2)
 }
 
 export function LanguageSelector() {
