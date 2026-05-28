@@ -254,11 +254,11 @@ export function HomepageContent() {
               </Link>
             </div>
 
-            <div className="bg-card p-10 rounded-2xl shadow-lg border border-border opacity-70">
-              <div className="h-20 w-20 rounded-2xl bg-muted flex items-center justify-center mx-auto mb-6">
+            <div className="bg-card p-10 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-shadow">
+              <div className="h-20 w-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10 text-muted-foreground"
+                  className="h-10 w-10 text-primary"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -271,13 +271,20 @@ export function HomepageContent() {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-center">{t("parentsCoaches")}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-center">{t("coaches")}</h3>
               <p className="text-muted-foreground mb-6 text-center leading-relaxed">
-                {t("parentsCoachesDesc")}
+                {t("coachesDesc")}
               </p>
-              <Button variant="outline" disabled className="w-full h-12 text-base font-semibold bg-transparent">
-                {t("comingSoon")}
-              </Button>
+              <Link
+                href="https://www.superstarsoftomorrow.football/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button className="bg-primary hover:bg-primary/90 w-full h-12 text-base font-semibold shadow-md hover:shadow-lg transition-all">
+                  {t("learnMore")}
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
