@@ -92,6 +92,7 @@ export const translations = {
     copyright: "© 2026 Superstars of Tomorrow.",
     allRightsReserved: "All rights reserved.",
     privacyPolicy: "Privacy Policy",
+    termsOfUse: "Terms of Use",
 
     // About Page
     aboutSsot: "About Superstars of Tomorrow",
@@ -236,6 +237,7 @@ export const translations = {
     copyright: "2026 Superstars of Tomorrow.",
     allRightsReserved: "Todos los derechos reservados.",
     privacyPolicy: "Política de Privacidad",
+    termsOfUse: "Términos de Uso",
 
     // About Page
     aboutSsot: "Acerca de Superstars of Tomorrow",
@@ -381,6 +383,7 @@ export const translations = {
     copyright: "© 2026 Superstars of Tomorrow.",
     allRightsReserved: "Todos os direitos reservados.",
     privacyPolicy: "Política de Privacidade",
+    termsOfUse: "Termos de Uso",
 
     // About Page
     aboutSsot: "Sobre o Superstars of Tomorrow",
