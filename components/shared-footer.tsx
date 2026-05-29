@@ -102,6 +102,9 @@ export function SharedFooter() {
             <Link href="/privacy-policy" className="text-gray-500 hover:underline text-xs">
               {t("privacyPolicy")}
             </Link>
+            <Link href="/terms" className="text-gray-500 hover:underline text-xs">
+              {t("termsOfUse")}
+            </Link>
           </div>
         </div>
       </div>
