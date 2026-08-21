@@ -47,6 +47,7 @@ export default function PrivacyPolicy() {
     { id: "cookies", title: "Use of Cookies" },
     { id: "app-data", title: "Mobile App Data Collection and Consent" },
     { id: "ai-coach", title: "AI Coach and Third-Party AI Processing (OpenAI)" },
+    { id: "advertising", title: "Advertising" },
     { id: "leaderboard", title: "Leaderboard and Performance Data" },
     { id: "business-services", title: "Business Services" },
     { id: "web-hosting", title: "Provision of Online Services and Web Hosting" },
@@ -155,6 +156,7 @@ export default function PrivacyPolicy() {
                             <li>Usage data (app interactions, feature usage)</li>
                             <li>Meta/communication data (device information, IP addresses)</li>
                             <li>Messages you send to the AI Coach and the drill statistics you attach to them.</li>
+                            <li>Technical data needed to show an ad (app identifier, device type, OS version, IP-derived coarse location, ad delivery events).</li>
                           </ul>
                         </div>
 
@@ -180,6 +182,7 @@ export default function PrivacyPolicy() {
                             <li>Marketing and promotional activities</li>
                             <li>Provision of our online services and usability enhancement</li>
                             <li>AI-based coaching and training reports, provided through our third-party processor OpenAI (see "AI Coach and Third-Party AI Processing").</li>
+                            <li>Showing rewarded video advertising (non-personalized on iOS and for all users under 16; personalized on Android only with consent).</li>
                           </ul>
                         </div>
                       </div>
@@ -269,7 +272,7 @@ export default function PrivacyPolicy() {
 
                       <p className="text-gray-700 leading-relaxed">
                         Recipients include OpenAI, L.L.C. (AI Coach processing, see the dedicated section), Google LLC
-                        (Firebase hosting, authentication, analytics and Cloud Functions), Microsoft Corporation
+                        (Firebase hosting, authentication, analytics and Cloud Functions; AdMob rewarded advertising), Microsoft Corporation
                         (Clarity analytics), RevenueCat, Inc. (in-app purchase processing) and the Apple App Store /
                         Google Play (in-app purchases).
                       </p>
@@ -284,9 +287,12 @@ export default function PrivacyPolicy() {
                         take place in accordance with the legal requirements and with appropriate safeguards such as
                         standard contractual clauses or adequacy decisions.
                       </p>
-                      <p className="text-gray-700 leading-relaxed">
+                      <p className="text-gray-700 leading-relaxed mb-4">
                         Transfers to OpenAI, L.L.C. (United States) are covered by OpenAI&apos;s Data Processing Addendum,
                         which incorporates the EU Standard Contractual Clauses.
+                      </p>
+                      <p className="text-gray-700 leading-relaxed">
+                        Advertising data is processed by Google LLC (United States) under Google&apos;s Data Processing Terms, which incorporate the EU Standard Contractual Clauses; Google LLC is certified under the EU-U.S. Data Privacy Framework.
                       </p>
                     </section>
 
@@ -403,6 +409,28 @@ export default function PrivacyPolicy() {
                       </p>
                       <p className="text-gray-700 leading-relaxed">
                         <strong>Purpose.</strong> Solely to generate the AI Coach&apos;s answers and training reports for you. Under OpenAI&apos;s API data usage policy, OpenAI does not use data submitted through its API to train its models and retains it only for a limited period for abuse monitoring before deletion. OpenAI is bound by a data processing agreement to protect your data to a standard at least equivalent to this policy. See <Link href="https://openai.com/policies/api-data-usage-policies" className="text-primary underline" target="_blank" rel="noreferrer">https://openai.com/policies/api-data-usage-policies</Link>.
+                      </p>
+                    </section>
+
+                    <section id="advertising">
+                      <h2 className="text-2xl font-bold mb-4 text-foreground">Advertising</h2>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        The app shows <strong>rewarded video ads</strong> only — short ads you choose to watch to earn free coins or to unlock a drill for one session. Ads are served by <strong>Google AdMob</strong> (Google LLC).
+                      </p>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        <strong>We do not track you.</strong> We never access your device&apos;s advertising identifier, never combine data collected in the app with data from other companies&apos; apps or websites for advertising, and never share your data with data brokers. Consequently the app does not show the iOS &quot;Allow tracking&quot; (App Tracking Transparency) request.
+                      </p>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        <strong>Ads on iOS are always non-personalized.</strong> They are selected from the context of the app, not from a profile of you.
+                      </p>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        <strong>Ads on Android</strong> are non-personalized by default. If you are 16 or older, the app may ask — from your second session — whether you consent to personalized ads through Google&apos;s consent form; you can decline and continue with non-personalized ads, and change your choice later from the same form.
+                      </p>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        <strong>Children and teenagers.</strong> For users under 13 ad requests are tagged as child-directed; for users under 16 they are tagged as under the age of consent. In both cases ads are non-personalized and limited to general-audience content, and no consent request is shown.
+                      </p>
+                      <p className="text-gray-700 leading-relaxed">
+                        To serve an ad, Google receives technical data from your device (such as the app identifier, device type, operating system version, coarse location derived from your IP address, and whether the ad was displayed or completed). This data is processed under Google&apos;s privacy policy (<Link href="https://policies.google.com/privacy" className="text-primary underline" target="_blank" rel="noreferrer">https://policies.google.com/privacy</Link>) and Google&apos;s advertising policies for non-personalized ads. Legal basis: our legitimate interest in funding the free tier of the app (Art. 6(1)(f) GDPR); for personalized ads on Android, your consent (Art. 6(1)(a) GDPR).
                       </p>
                     </section>
 
@@ -556,6 +584,13 @@ export default function PrivacyPolicy() {
                       </p>
 
                       <div className="space-y-4">
+                        <div className="border-l-4 border-green-500 pl-4">
+                          <h4 className="font-semibold text-foreground">Advertising choices</h4>
+                          <p className="text-gray-700 text-sm mt-1">
+                            Ads in the app are non-personalized on iOS and for all users under 16. On Android, users 16 and older can give or withdraw consent to personalized ads at any time through Google&apos;s consent form shown in the app.
+                          </p>
+                        </div>
+
                         <div className="border-l-4 border-green-500 pl-4">
                           <h4 className="font-semibold text-foreground">Right to Object</h4>
                           <p className="text-gray-700 text-sm mt-1">
