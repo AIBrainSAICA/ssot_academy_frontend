@@ -59,9 +59,6 @@ export const translations = {
     players: "Players",
     playersDesc: "Download the SSOT Player App today and start training smarter",
     downloadNow: "Download Now",
-    coaches: "Coaches",
-    coachesDesc: "Track player progress and manage training with our Academy Dashboard",
-    learnMore: "Learn More",
     parentsCoaches: "Parents & Coaches",
     parentsCoachesDesc: "Academy Dashboard coming soon to track player progress",
     comingSoon: "Coming Soon",
@@ -92,7 +89,6 @@ export const translations = {
     copyright: "© 2026 Superstars of Tomorrow.",
     allRightsReserved: "All rights reserved.",
     privacyPolicy: "Privacy Policy",
-    termsOfUse: "Terms of Use",
 
     // About Page
     aboutSsot: "About Superstars of Tomorrow",
@@ -204,9 +200,6 @@ export const translations = {
     players: "Jugadores",
     playersDesc: "Descárgate hoy mismo la aplicación SSOT Player y empieza a entrenar de forma más inteligente",
     downloadNow: "Descargar Ahora",
-    coaches: "Entrenadores",
-    coachesDesc: "Sigue el progreso de los jugadores y gestiona los entrenamientos con nuestro Panel de Academia",
-    learnMore: "Más Información",
     parentsCoaches: "Padres y Entrenadores",
     parentsCoachesDesc: "Próximamente, el Panel de la Academia permitirá seguir el progreso de los jugadores",
     comingSoon: "Próximamente",
@@ -237,7 +230,6 @@ export const translations = {
     copyright: "2026 Superstars of Tomorrow.",
     allRightsReserved: "Todos los derechos reservados.",
     privacyPolicy: "Política de Privacidad",
-    termsOfUse: "Términos de Uso",
 
     // About Page
     aboutSsot: "Acerca de Superstars of Tomorrow",
@@ -350,9 +342,6 @@ export const translations = {
     players: "Jogadores",
     playersDesc: "Baixe hoje o aplicativo SSOT Player e comece a treinar melhor.",
     downloadNow: "Baixar agora",
-    coaches: "Treinadores",
-    coachesDesc: "Acompanhe o progresso dos jogadores e gerencie os treinos com nosso Painel Academy",
-    learnMore: "Saiba Mais",
     parentsCoaches: "Pais e Treinadores",
     parentsCoachesDesc: "Em breve: Painel Academy para acompanhar a evolução dos jogadores.",
     comingSoon: "Em breve",
@@ -383,7 +372,6 @@ export const translations = {
     copyright: "© 2026 Superstars of Tomorrow.",
     allRightsReserved: "Todos os direitos reservados.",
     privacyPolicy: "Política de Privacidade",
-    termsOfUse: "Termos de Uso",
 
     // About Page
     aboutSsot: "Sobre o Superstars of Tomorrow",

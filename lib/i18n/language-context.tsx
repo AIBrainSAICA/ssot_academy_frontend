@@ -13,14 +13,12 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>("en")
-  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem("ssot-language") as Language
     if (savedLanguage && (savedLanguage === "en" || savedLanguage === "es" || savedLanguage === "pt")) {
       setLanguageState(savedLanguage)
     }
-    setMounted(true)
   }, [])
 
   const setLanguage = (lang: Language) => {
@@ -29,9 +27,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   }
 
   const t = (key: TranslationKey): string => {
-    // Use default language during SSR to prevent hydration mismatch
-    const currentLang = mounted ? language : "en"
-    return translations[currentLang][key] || translations["en"][key] || key
+    return translations[language][key] || translations["en"][key] || key
   }
 
   return <LanguageContext.Provider value={{ language, setLanguage, t }}>{children}</LanguageContext.Provider>
