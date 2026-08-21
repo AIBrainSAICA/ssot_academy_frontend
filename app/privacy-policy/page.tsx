@@ -46,6 +46,7 @@ export default function PrivacyPolicy() {
     { id: "erasure", title: "Erasure of Data" },
     { id: "cookies", title: "Use of Cookies" },
     { id: "app-data", title: "Mobile App Data Collection and Consent" },
+    { id: "ai-coach", title: "AI Coach and Third-Party AI Processing (OpenAI)" },
     { id: "leaderboard", title: "Leaderboard and Performance Data" },
     { id: "business-services", title: "Business Services" },
     { id: "web-hosting", title: "Provision of Online Services and Web Hosting" },
@@ -97,7 +98,7 @@ export default function PrivacyPolicy() {
                   <h1 className="text-4xl font-bold mb-8 text-foreground">Privacy Policy</h1>
 
                   <p className="text-gray-600 mb-8">
-                    <strong>Last updated:</strong> Mar 3, 2026
+                    <strong>Last updated:</strong> Aug 21, 2026
                   </p>
 
                   <div className="space-y-12">
@@ -153,6 +154,7 @@ export default function PrivacyPolicy() {
                             <li>Contract data (subscription details, service agreements)</li>
                             <li>Usage data (app interactions, feature usage)</li>
                             <li>Meta/communication data (device information, IP addresses)</li>
+                            <li>Messages you send to the AI Coach and the drill statistics you attach to them.</li>
                           </ul>
                         </div>
 
@@ -177,6 +179,7 @@ export default function PrivacyPolicy() {
                             <li>Feedback collection and service improvement</li>
                             <li>Marketing and promotional activities</li>
                             <li>Provision of our online services and usability enhancement</li>
+                            <li>AI-based coaching and training reports, provided through our third-party processor OpenAI (see "AI Coach and Third-Party AI Processing").</li>
                           </ul>
                         </div>
                       </div>
@@ -258,21 +261,32 @@ export default function PrivacyPolicy() {
                         content that are embedded in a website.
                       </p>
 
-                      <p className="text-gray-700 leading-relaxed">
+                      <p className="text-gray-700 leading-relaxed mb-4">
                         In such a case, the legal requirements will be respected and in particular corresponding
                         contracts or agreements, which serve the protection of your data, will be concluded with the
                         recipients of your data.
+                      </p>
+
+                      <p className="text-gray-700 leading-relaxed">
+                        Recipients include OpenAI, L.L.C. (AI Coach processing, see the dedicated section), Google LLC
+                        (Firebase hosting, authentication, analytics and Cloud Functions), Microsoft Corporation
+                        (Clarity analytics), RevenueCat, Inc. (in-app purchase processing) and the Apple App Store /
+                        Google Play (in-app purchases).
                       </p>
                     </section>
 
                     <section id="third-countries">
                       <h2 className="text-2xl font-bold mb-4 text-foreground">Data Processing in Third Countries</h2>
-                      <p className="text-gray-700 leading-relaxed">
+                      <p className="text-gray-700 leading-relaxed mb-4">
                         If we process data in a third country (i.e. outside the European Union (EU), the European
                         Economic Area (EEA)) or the processing takes place in the context of the use of third party
                         services or disclosure or transfer of data to other persons, bodies or companies, this will only
                         take place in accordance with the legal requirements and with appropriate safeguards such as
                         standard contractual clauses or adequacy decisions.
+                      </p>
+                      <p className="text-gray-700 leading-relaxed">
+                        Transfers to OpenAI, L.L.C. (United States) are covered by OpenAI&apos;s Data Processing Addendum,
+                        which incorporates the EU Standard Contractual Clauses.
                       </p>
                     </section>
 
@@ -363,10 +377,33 @@ export default function PrivacyPolicy() {
                         <div>
                           <h3 className="text-xl font-semibold mb-3 text-foreground">Data Related to Minors</h3>
                           <p className="text-gray-700 leading-relaxed">
-                            Our App may be used by individuals under the age of 16 with the consent of a parent or legal guardian. Parents or guardians are responsible for supervising the use of the App and may request access to, modification of, or deletion of their child's data at any time by contacting us at ssot@aibrain.com.
+                            Our App may be used by individuals under the age of 16 with the consent of a parent or legal guardian. Parents or guardians are responsible for supervising the use of the App and may request access to, modification of, or deletion of their child's data at any time by contacting us at ssot@aibrain.com. For the AI Coach, the in-app agreement to share data with OpenAI must be given by a parent or guardian for users under 13.
                           </p>
                         </div>
                       </div>
+                    </section>
+
+                    <section id="ai-coach">
+                      <h2 className="text-2xl font-bold mb-4 text-foreground">AI Coach and Third-Party AI Processing (OpenAI)</h2>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        When you use the AI Coach (chat, drill attachments, or AI training reports), we transmit the information needed to generate a response to <strong>OpenAI, L.L.C., San Francisco, United States</strong>, which processes it on our behalf as a processor through its API. The information may include:
+                      </p>
+                      <ul className="list-disc pl-6 space-y-1 text-gray-700 mb-4">
+                        <li>your first name, age, skill level, playing position and preferred foot;</li>
+                        <li>your skill ratings and best drill results;</li>
+                        <li>your recent training sessions and achievements;</li>
+                        <li>the messages you type to the AI Coach; and</li>
+                        <li>the drill statistics you choose to attach.</li>
+                      </ul>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        We do <strong>not</strong> transmit your last name, email address, photos, precise location or drill videos.
+                      </p>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        <strong>Legal basis.</strong> Your consent (Art. 6(1)(a) GDPR), given in the app before the first transmission. For users under 13, consent is given by a parent or guardian in the app. You can withdraw consent at any time in <em>Settings → Privacy → AI Coach data sharing</em>; this stops all further transmission and does not affect processing carried out before withdrawal.
+                      </p>
+                      <p className="text-gray-700 leading-relaxed">
+                        <strong>Purpose.</strong> Solely to generate the AI Coach&apos;s answers and training reports for you. Under OpenAI&apos;s API data usage policy, OpenAI does not use data submitted through its API to train its models and retains it only for a limited period for abuse monitoring before deletion. OpenAI is bound by a data processing agreement to protect your data to a standard at least equivalent to this policy. See <Link href="https://openai.com/policies/api-data-usage-policies" className="text-primary underline" target="_blank" rel="noreferrer">https://openai.com/policies/api-data-usage-policies</Link>.
+                      </p>
                     </section>
 
                     <section id="leaderboard">
