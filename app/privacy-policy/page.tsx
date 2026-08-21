@@ -405,10 +405,10 @@ export default function PrivacyPolicy() {
                         We do <strong>not</strong> transmit your last name, email address, photos, precise location or drill videos.
                       </p>
                       <p className="text-gray-700 leading-relaxed mb-4">
-                        <strong>Legal basis.</strong> Your consent (Art. 6(1)(a) GDPR), given in the app before the first transmission. For users under 13, consent is given by a parent or guardian in the app. You can withdraw consent at any time in <em>Settings → Privacy → AI Coach data sharing</em>; this stops all further transmission and does not affect processing carried out before withdrawal.
+                        <strong>Legal basis.</strong>{' '}Your consent (Art. 6(1)(a) GDPR), given in the app before the first transmission. For users under 13, consent is given by a parent or guardian in the app. You can withdraw consent at any time in <em>Settings → Privacy → AI Coach data sharing</em>; this stops all further transmission and does not affect processing carried out before withdrawal.
                       </p>
                       <p className="text-gray-700 leading-relaxed">
-                        <strong>Purpose.</strong> Solely to generate the AI Coach&apos;s answers and training reports for you. Under OpenAI&apos;s API data usage policy, OpenAI does not use data submitted through its API to train its models and retains it only for a limited period for abuse monitoring before deletion. OpenAI is bound by a data processing agreement to protect your data to a standard at least equivalent to this policy. See <Link href="https://openai.com/policies/api-data-usage-policies" className="text-primary underline" target="_blank" rel="noreferrer">https://openai.com/policies/api-data-usage-policies</Link>.
+                        <strong>Purpose.</strong>{' '}Solely to generate the AI Coach&apos;s answers and training reports for you. Under OpenAI&apos;s API data usage policy, OpenAI does not use data submitted through its API to train its models and retains it only for a limited period for abuse monitoring before deletion. OpenAI is bound by a data processing agreement to protect your data to a standard at least equivalent to this policy. See <Link href="https://openai.com/policies/api-data-usage-policies" className="text-primary underline" target="_blank" rel="noreferrer">https://openai.com/policies/api-data-usage-policies</Link>.
                       </p>
                     </section>
 
@@ -418,16 +418,16 @@ export default function PrivacyPolicy() {
                         The app shows <strong>rewarded video ads</strong> only — short ads you choose to watch to earn free coins or to unlock a drill for one session. Ads are served by <strong>Google AdMob</strong> (Google LLC).
                       </p>
                       <p className="text-gray-700 leading-relaxed mb-4">
-                        <strong>We do not track you.</strong> We never access your device&apos;s advertising identifier, never combine data collected in the app with data from other companies&apos; apps or websites for advertising, and never share your data with data brokers. Consequently the app does not show the iOS &quot;Allow tracking&quot; (App Tracking Transparency) request.
+                        <strong>We do not track you.</strong>{' '}We never access your device&apos;s advertising identifier, never combine data collected in the app with data from other companies&apos; apps or websites for advertising, and never share your data with data brokers. Consequently the app does not show the iOS &quot;Allow tracking&quot; (App Tracking Transparency) request.
                       </p>
                       <p className="text-gray-700 leading-relaxed mb-4">
-                        <strong>Ads on iOS are always non-personalized.</strong> They are selected from the context of the app, not from a profile of you.
+                        <strong>Ads on iOS are always non-personalized.</strong>{' '}They are selected from the context of the app, not from a profile of you.
                       </p>
                       <p className="text-gray-700 leading-relaxed mb-4">
-                        <strong>Ads on Android</strong> are non-personalized by default. If you are 16 or older, the app may ask — from your second session — whether you consent to personalized ads through Google&apos;s consent form; you can decline and continue with non-personalized ads, and change your choice later from the same form.
+                        <strong>Ads on Android</strong>{' '}are non-personalized by default. If you are 16 or older, the app may ask — from your second session — whether you consent to personalized ads through Google&apos;s consent form; you can decline and continue with non-personalized ads, and change your choice later from the same form.
                       </p>
                       <p className="text-gray-700 leading-relaxed mb-4">
-                        <strong>Children and teenagers.</strong> For users under 13 ad requests are tagged as child-directed; for users under 16 they are tagged as under the age of consent. In both cases ads are non-personalized and limited to general-audience content, and no consent request is shown.
+                        <strong>Children and teenagers.</strong>{' '}For users under 13 ad requests are tagged as child-directed; for users under 16 they are tagged as under the age of consent. In both cases ads are non-personalized and limited to general-audience content, and no consent request is shown.
                       </p>
                       <p className="text-gray-700 leading-relaxed">
                         To serve an ad, Google receives technical data from your device (such as the app identifier, device type, operating system version, coarse location derived from your IP address, and whether the ad was displayed or completed). This data is processed under Google&apos;s privacy policy (<Link href="https://policies.google.com/privacy" className="text-primary underline" target="_blank" rel="noreferrer">https://policies.google.com/privacy</Link>) and Google&apos;s advertising policies for non-personalized ads. Legal basis: our legitimate interest in funding the free tier of the app (Art. 6(1)(f) GDPR); for personalized ads on Android, your consent (Art. 6(1)(a) GDPR).
