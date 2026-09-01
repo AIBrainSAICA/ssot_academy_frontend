@@ -34,8 +34,11 @@ export function HomepageContent() {
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-xl">
-                {t("heroDescription")}
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
+                <strong className="font-semibold text-foreground">Understand the player you are becoming.</strong>{" "}
+                Train with your <strong className="font-semibold text-foreground">Personal AI Coach</strong>, turn practice into{ " "}
+                <strong className="font-semibold text-foreground">measurable football evidence</strong>, and connect with an{ " "}
+                <strong className="font-semibold text-foreground">AI-augmented Human Coach</strong> who helps you improve what matters next.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
