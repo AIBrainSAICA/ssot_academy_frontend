@@ -15,7 +15,7 @@ export const translations = {
     developYour: "Develop Your",
     superTalent: "Super-Talent.",
     heroDescription:
-      "AI-powered football training app that works with just your smartphone's front camera — no extra hardware, no setup.",
+      "Understand the player you are becoming. Train with your Personal AI Coach, turn practice into measurable football evidence, and connect with an AI-augmented Human Coach who helps you improve what matters next.",
     downloadGooglePlay: "Download on Google Play",
     appStoreComingSoon: "Download on App Store",
     mvpEarlyAccess: "MVP · Early Access",
@@ -409,7 +409,7 @@ export const translations = {
       "Nossos exercícios são desenvolvidos em conjunto com treinadores de clubes e academias profissionais de toda a Europa, garantindo que você treine com métodos utilizados pelos melhores times do mundo.",
     mobileFirst: "Mobile First",
     mobileFirstDesc:
-      "Sem acessórios, sensores ou uploads. Tudo acontece instantaneamente no seu celular usando visão computacional.",
+      "Sem acess��rios, sensores ou uploads. Tudo acontece instantaneamente no seu celular usando visão computacional.",
     realTimeFeedback: "Feedback em Tempo Real",
     realTimeFeedbackDesc:
       "Receba correções instantâneas durante o treino, não horas depois. Nossa IA analisa seus movimentos enquanto você treina.",
