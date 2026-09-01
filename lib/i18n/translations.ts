@@ -10,8 +10,8 @@ export const translations = {
     downloadApp: "Download App",
 
     // Hero Section
-    trainSmarter: "Train Smarter.",
-    anywhere: "Anywhere.",
+    trainSmarter: "Discover Your Super-Self,",
+    anywhere: "Develop Your Super-Talent.",
     heroDescription:
       "AI-powered football training app that works with just your smartphone's front camera — no extra hardware, no setup.",
     downloadGooglePlay: "Download on Google Play",
