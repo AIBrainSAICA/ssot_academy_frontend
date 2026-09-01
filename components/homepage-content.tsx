@@ -18,9 +18,11 @@ export function HomepageContent() {
             {/* Left side content */}
             <div className="space-y-8">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
-                <span className="text-foreground">{t("trainSmarter")}</span>{" "}
+                <span className="text-foreground">{t("discoverYour")}{" "}</span>
+                <span className="text-primary">{t("superSelf")}</span>{" "}
+                <span className="text-foreground">{t("developYour")}{" "}</span>
                 <span className="relative inline-block">
-                  <span className="text-primary">{t("anywhere")}</span>
+                  <span className="text-primary">{t("superTalent")}</span>
                   <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
                     <path
                       d="M0 4C50 4 150 4 200 4"
@@ -32,8 +34,11 @@ export function HomepageContent() {
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-xl">
-                {t("heroDescription")}
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
+                <strong className="font-semibold text-foreground">Understand the player you are becoming.</strong>{" "}
+                Train with your <strong className="font-semibold text-foreground">Personal AI Coach</strong>, turn practice into{ " "}
+                <strong className="font-semibold text-foreground">measurable football evidence</strong>, and connect with an{ " "}
+                <strong className="font-semibold text-foreground">AI-augmented Human Coach</strong> who helps you improve what matters next.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
