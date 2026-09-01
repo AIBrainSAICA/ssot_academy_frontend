@@ -2,387 +2,145 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Download, Smartphone, Zap, BarChart3, Trophy, Target, CheckCircle2 } from "lucide-react"
+import { ArrowRight, BarChart3, Check, Download, Gauge, Sparkles, Target, Trophy } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/i18n/language-context"
+
+const googlePlayUrl = "https://play.google.com/store/apps/details?id=com.aibrain.ssot"
+const appStoreUrl = "https://apps.apple.com/us/app/ssot-ai-football-training/id6756636923"
+
+function StoreButtons({ compact = false }: { compact?: boolean }) {
+  const { t } = useLanguage()
+  return (
+    <div className="flex flex-col gap-3 sm:flex-row">
+      <Link href={googlePlayUrl} target="_blank" rel="noopener noreferrer">
+        <Button size={compact ? "default" : "lg"} className="w-full bg-primary px-6 font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 sm:w-auto">
+          <Download data-icon="inline-start" />
+          {t("downloadGooglePlay")}
+        </Button>
+      </Link>
+      <Link href={appStoreUrl} target="_blank" rel="noopener noreferrer">
+        <Button size={compact ? "default" : "lg"} variant="outline" className="w-full bg-transparent px-6 font-semibold sm:w-auto">
+          {t("downloadAppStore")}
+        </Button>
+      </Link>
+    </div>
+  )
+}
 
 export function HomepageContent() {
   const { t } = useLanguage()
 
+  const pillars = [
+    { icon: Target, title: "The Player", description: "Build self-awareness through purposeful sessions, clear goals, and a record of how your game is developing." },
+    { icon: Sparkles, title: "The Personal AI Coach", description: "Get immediate, personal feedback that turns every practice into a smarter next step." },
+    { icon: Trophy, title: "The AI-Augmented Human Coach", description: "Bring meaningful football evidence to the coach who understands where you want to go." },
+  ]
+
+  const journey = [
+    { icon: Gauge, title: "Train", text: "Complete focused drills with nothing more than your phone." },
+    { icon: BarChart3, title: "Measure", text: "Turn movement, consistency, and progress into football evidence." },
+    { icon: ArrowRight, title: "Improve", text: "Know what matters next and keep building your game." },
+  ]
+
   return (
-    <main className="flex-1">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-background to-muted/20 py-16 md:py-24 overflow-hidden">
-        <div className="container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left side content */}
-            <div className="space-y-8">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
-                <span className="text-foreground">{t("discoverYour")}{" "}</span>
-                <span className="text-primary">{t("superSelf")}</span>{" "}
-                <span className="text-foreground">{t("developYour")}{" "}</span>
-                <span className="relative inline-block">
-                  <span className="text-primary">{t("superTalent")}</span>
-                  <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
-                    <path
-                      d="M0 4C50 4 150 4 200 4"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                      className="text-primary opacity-30"
-                    />
-                  </svg>
-                </span>
-              </h1>
-
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
-                <strong className="font-semibold text-foreground">Understand the player you are becoming.</strong>{" "}
-                Train with your <strong className="font-semibold text-foreground">Personal AI Coach</strong>, turn practice into{ " "}
-                <strong className="font-semibold text-foreground">measurable football evidence</strong>, and connect with an{ " "}
-                <strong className="font-semibold text-foreground">AI-augmented Human Coach</strong> who helps you improve what matters next.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="https://play.google.com/store/apps/details?id=com.aibrain.ssot"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    size="lg"
-                    className="bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all w-full sm:w-auto h-14 px-8 text-base"
-                  >
-                    <Download className="mr-2 h-5 w-5" />
-                    {t("downloadGooglePlay")}
-                  </Button>
-                </Link>
-                <Link
-                  href="https://apps.apple.com/us/app/ssot-ai-football-training/id6756636923"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-2 border-border text-foreground hover:bg-muted/50 w-full sm:w-auto h-14 px-8 text-base font-semibold bg-transparent"
-                  >
-                    <svg viewBox="0 0 24 24" className="mr-2 h-5 w-5" fill="currentColor">
-                      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-                    </svg>
-                    {t("downloadAppStore")}
-                  </Button>
-                </Link>
-              </div>
-
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-sm font-semibold text-primary border border-primary/20">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                </span>
-                {t("mvpEarlyAccess")}
-              </div>
+    <main className="flex-1 bg-background">
+      <section className="border-b border-border bg-muted/20 py-16 md:py-24">
+        <div className="container grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="flex flex-col items-start gap-7">
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
+              <span className="size-2 rounded-full bg-primary" aria-hidden="true" />
+              {t("mvpEarlyAccess")}
             </div>
-
-            {/* Right side visualization */}
-            <div className="relative h-[350px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-border/50">
-              <video
-                autoPlay
-                loop
-                playsInline
-                muted
-                className="w-full h-full object-cover"
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/latest_banner_video-00e16f4-VA8CTiTio9noEGAWGMd6r68NzAN03c.mp4"
-              >
-                Your browser does not support the video tag.
-              </video>
+            <h1 className="max-w-3xl text-balance text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
+              <span className="text-foreground">{t("discoverYour")}</span>{" "}
+              <span className="text-primary">{t("superSelf")}</span>{" "}
+              <span className="text-foreground">{t("developYour")}</span>{" "}
+              <span className="text-primary">{t("superTalent")}</span>
+            </h1>
+            <p className="max-w-xl text-pretty text-base leading-7 text-muted-foreground md:text-lg">
+              <strong className="font-semibold text-foreground">Understand the player you are becoming.</strong>{" "}
+              Train with your <strong className="font-semibold text-foreground">Personal AI Coach</strong>, turn practice into{" "}
+              <strong className="font-semibold text-foreground">measurable football evidence</strong>, and connect with an{" "}
+              <strong className="font-semibold text-foreground">AI-augmented Human Coach</strong> who helps you improve what matters next.
+            </p>
+            <StoreButtons />
+          </div>
+          <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
+            <Image src="/images/design-mode/122412430(1).jpg" alt="Player training with the SSOT app" width={900} height={650} className="aspect-[4/3] object-cover" priority />
+            <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-border/60 bg-background/90 p-4 backdrop-blur-sm">
+              <p className="text-sm font-semibold text-foreground">One phone. A clearer path.</p>
+              <p className="text-sm leading-6 text-muted-foreground">Train anywhere and see your development take shape.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What SSOT Does Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 md:py-28">
         <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("whatSsotDoes")}</h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              {t("whatSsotDoesSubtitle")}
-            </p>
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-primary">The SSOT system</p>
+            <h2 className="text-balance text-3xl font-bold tracking-tight md:text-5xl">{t("whatSsotDoes")}</h2>
+            <p className="mt-4 text-pretty text-lg leading-7 text-muted-foreground">{t("whatSsotDoesSubtitle")}</p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[
-              {
-                icon: Zap,
-                title: t("realTimeAiTracking"),
-                description: t("realTimeAiTrackingDesc"),
-              },
-              {
-                icon: Target,
-                title: t("onScreenArGuidance"),
-                description: t("onScreenArGuidanceDesc"),
-              },
-              {
-                icon: Trophy,
-                title: t("dailyChallenges"),
-                description: t("dailyChallengesDesc"),
-              },
-              {
-                icon: BarChart3,
-                title: t("progressTracking"),
-                description: t("progressTrackingDesc"),
-              },
-              {
-                icon: Smartphone,
-                title: t("mobileOnly"),
-                description: t("mobileOnlyDesc"),
-              },
-              {
-                icon: () => (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
-                ),
-                title: t("multipleSkills"),
-                description: t("multipleSkillsDesc"),
-              },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="group bg-card p-8 rounded-2xl shadow-sm hover:shadow-lg border border-border transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="h-14 w-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                  <feature.icon className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
-              </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {pillars.map((pillar) => (
+              <article key={pillar.title} className="flex flex-col gap-5 rounded-2xl border border-border bg-card p-7 shadow-sm">
+                <div className="flex size-12 items-center justify-center rounded-xl bg-primary/10 text-primary"><pillar.icon /></div>
+                <h3 className="text-xl font-bold">{pillar.title}</h3>
+                <p className="leading-7 text-muted-foreground">{pillar.description}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why SSOT Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("whySsot")}</h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              {t("whySsotSubtitle")}
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                title: t("phoneBased"),
-                description: t("phoneBasedDesc"),
-              },
-              {
-                title: t("instantFeedback"),
-                description: t("instantFeedbackDesc"),
-              },
-              {
-                title: t("multipleFootballSkills"),
-                description: t("multipleFootballSkillsDesc"),
-              },
-              {
-                title: t("personalizedProgression"),
-                description: t("personalizedProgressionDesc"),
-              },
-            ].map((item, index) => (
-              <div key={index} className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="h-11 w-11 rounded-full bg-green-50 border-2 border-green-200 flex items-center justify-center">
-                    <CheckCircle2 className="h-6 w-6 text-green-600" />
-                  </div>
+      <section className="border-y border-border bg-muted/20 py-20 md:py-28">
+        <div className="container grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-primary">From practice to proof</p>
+            <h2 className="max-w-xl text-balance text-3xl font-bold tracking-tight md:text-5xl">Football intelligence that grows with you.</h2>
+            <p className="mt-5 max-w-xl text-pretty text-lg leading-8 text-muted-foreground">Every session gives you more than a score. It helps you understand your strengths, spot the next opportunity, and make better decisions about your development.</p>
+            <div className="mt-8 flex flex-col gap-4">
+              {journey.map((step) => (
+                <div key={step.title} className="flex items-start gap-4">
+                  <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground"><step.icon /></div>
+                  <div><h3 className="font-bold">{step.title}</h3><p className="mt-1 leading-6 text-muted-foreground">{step.text}</p></div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Who It's For Section */}
-      <section className="py-20 bg-background">
-        <div className="container max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("whoItsFor")}</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-card p-10 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-shadow">
-              <div className="h-20 w-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10 text-primary"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-center">{t("players")}</h3>
-              <p className="text-muted-foreground mb-6 text-center leading-relaxed">
-                {t("playersDesc")}
-              </p>
-              <Link
-                href="https://play.google.com/store/apps/details?id=com.aibrain.ssot"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <Button className="bg-primary hover:bg-primary/90 w-full h-12 text-base font-semibold shadow-md hover:shadow-lg transition-all">
-                  <Download className="mr-2 h-5 w-5" />
-                  {t("downloadNow")}
-                </Button>
-              </Link>
+              ))}
             </div>
-
-            <div className="bg-card p-10 rounded-2xl shadow-lg border border-border opacity-70">
-              <div className="h-20 w-20 rounded-2xl bg-muted flex items-center justify-center mx-auto mb-6">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10 text-muted-foreground"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-center">{t("parentsCoaches")}</h3>
-              <p className="text-muted-foreground mb-6 text-center leading-relaxed">
-                {t("parentsCoachesDesc")}
-              </p>
-              <Button variant="outline" disabled className="w-full h-12 text-base font-semibold bg-transparent">
-                {t("comingSoon")}
-              </Button>
+          </div>
+          <div className="rounded-3xl border border-border bg-card p-6 shadow-sm md:p-8">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Your Player Passport</p>
+            <h3 className="mt-4 text-2xl font-bold">A living record of your football journey.</h3>
+            <p className="mt-4 leading-7 text-muted-foreground">Your training history, achievements, and progress become a portable picture of the player you are becoming — ready to guide your next session and your next conversation.</p>
+            <div className="mt-8 flex flex-col gap-3 border-t border-border pt-6">
+              {["Personal progress history", "Evidence from real training", "A sharper next step"].map((item) => <div key={item} className="flex items-center gap-3 text-sm font-semibold"><Check className="text-primary" />{item}</div>)}
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-primary text-white relative overflow-hidden">
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 opacity-5">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-              backgroundSize: "32px 32px",
-            }}
-          ></div>
-        </div>
-
-        <div className="container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="text-center lg:text-left space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight">{t("startTrainingSmarter")}</h2>
-              <p className="text-xl text-white/90 leading-relaxed">
-                {t("ctaDescription")}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-                <Link
-                  href="https://play.google.com/store/apps/details?id=com.aibrain.ssot"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    size="lg"
-                    variant="secondary"
-                    className="bg-white text-primary hover:bg-white/95 w-full sm:w-auto h-14 px-8 text-base font-semibold shadow-xl hover:shadow-2xl transition-all"
-                  >
-                    <svg viewBox="0 0 24 24" className="mr-2 h-5 w-5" fill="currentColor">
-                      <path d="M3.609 1.814L13.792 12 3.609 22.186c-.181.181-.29.423-.29.684v.065c0 .36.186.687.491.873l.06.033c.228.125.465.159.709.159.396 0 .791-.132 1.01-.351L17.398 12 5.589 0.351A1.42 1.42 0 004.579 0c-.244 0-.481.034-.709.159l-.06.033A1.043 1.043 0 003.319 1.13v.065c0 .261.109.503.29.684z" />
-                    </svg>
-                    {t("downloadGooglePlay")}
-                  </Button>
-                </Link>
-                <Link
-                  href="https://apps.apple.com/us/app/ssot-ai-football-training/id6756636923"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    size="lg"
-                    variant="secondary"
-                    className="bg-white/20 text-white hover:bg-white/30 border border-white/30 w-full sm:w-auto h-14 px-8 text-base font-semibold shadow-xl hover:shadow-2xl transition-all"
-                  >
-                    <svg viewBox="0 0 24 24" className="mr-2 h-5 w-5" fill="currentColor">
-                      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-                    </svg>
-                    {t("downloadAppStore")}
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            <div className="relative h-[350px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
-              <Image
-                src="/images/design-mode/122412430(1).jpg"
-                alt="SSOT App Training in Action"
-                fill
-                className="object-cover"
-              />
-            </div>
+      <section className="py-20 md:py-28">
+        <div className="container text-center">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-primary">Your development path</p>
+          <h2 className="text-balance text-3xl font-bold tracking-tight md:text-5xl">Keep moving toward what matters next.</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg leading-8 text-muted-foreground">Start with your phone. Build a habit. Use the evidence to make every decision about your football more intentional.</p>
+          <div className="mx-auto mt-10 grid max-w-4xl gap-4 text-left sm:grid-cols-3">
+            {["Discover your Super-Self", "Develop your Super-Talent", "Connect with the right coach"].map((item, index) => <div key={item} className="rounded-2xl border border-border bg-card p-5"><span className="text-sm font-bold text-primary">0{index + 1}</span><p className="mt-3 font-bold">{item}</p></div>)}
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-16 bg-background">
-        <div className="container max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("contactFeedback")}</h2>
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            {t("contactDescription")}
-          </p>
-          <a
-            href="mailto:ssot@aibrain.com"
-            className="inline-flex items-center gap-3 text-lg font-semibold text-primary hover:text-primary/80 transition-colors px-6 py-3 rounded-xl hover:bg-primary/5"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-            ssot@aibrain.com
-          </a>
+      <section className="bg-primary py-16 text-primary-foreground md:py-20">
+        <div className="container flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+          <div className="max-w-2xl"><h2 className="text-balance text-3xl font-bold md:text-5xl">{t("startTrainingSmarter")}</h2><p className="mt-4 text-lg leading-7 text-primary-foreground/80">{t("ctaDescription")}</p></div>
+          <StoreButtons compact />
         </div>
+      </section>
+
+      <section id="contact" className="py-16">
+        <div className="container text-center"><h2 className="text-3xl font-bold">{t("contactFeedback")}</h2><p className="mt-3 text-muted-foreground">{t("contactDescription")}</p><a href="mailto:ssot@aibrain.com" className="mt-5 inline-block font-semibold text-primary hover:underline">ssot@aibrain.com</a></div>
       </section>
     </main>
   )
