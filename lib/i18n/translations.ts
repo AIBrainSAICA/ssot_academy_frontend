@@ -10,8 +10,10 @@ export const translations = {
     downloadApp: "Download App",
 
     // Hero Section
-    trainSmarter: "Discover Your Super-Self,",
-    anywhere: "Develop Your Super-Talent.",
+    discoverYour: "Discover Your",
+    superSelf: "Super-Self,",
+    developYour: "Develop Your",
+    superTalent: "Super-Talent.",
     heroDescription:
       "AI-powered football training app that works with just your smartphone's front camera — no extra hardware, no setup.",
     downloadGooglePlay: "Download on Google Play",
@@ -149,8 +151,10 @@ export const translations = {
     downloadApp: "Descargar Aplicación",
 
     // Hero Section
-    trainSmarter: "Entrena Mejor.",
-    anywhere: "En Cualquier Sitio.",
+    discoverYour: "Descubre tu",
+    superSelf: "Super-Ser,",
+    developYour: "Desarrolla tu",
+    superTalent: "Super-Talento.",
     heroDescription:
       "Aplicación de entrenamiento de fútbol impulsada por inteligencia artificial que funciona con la cámara frontal de tu teléfono, sin hardware adicional ni configuración.",
     downloadGooglePlay: "Descargar en Google Play",
@@ -291,8 +295,10 @@ export const translations = {
     downloadApp: "Baixar o App",
 
     // Hero Section
-    trainSmarter: "Treine melhor.",
-    anywhere: "Em qualquer lugar.",
+    discoverYour: "Descubra o seu",
+    superSelf: "Super-Eu,",
+    developYour: "Desenvolva o seu",
+    superTalent: "Super-Talento.",
     heroDescription:
       "O aplicativo de treino de futebol com inteligência artificial que funciona apenas com a câmera frontal do seu celular — sem equipamentos adicionais e sem configurações.",
     downloadGooglePlay: "Baixar no Google Play",
