@@ -66,5 +66,16 @@ export function HomepageContent() {
 }
 
 function Role({ tone, label, title, text, learn }: { tone: string; label: string; title: string; text: string; learn: string }) {
-  return <article className={`min-h-48 rounded-2xl p-5 text-primary-foreground ${tone}`}><p className="text-[9px] font-black opacity-75">{label}</p><h3 className="mt-2 text-lg font-black">{title}</h3><p className="mt-2 text-xs leading-5 opacity-90">{text}</p><p className="mt-5 border-t border-primary-foreground/25 pt-3 text-[10px] font-bold">LEARNS → {learn}</p></article>
+  const isPrimary = tone === "bg-primary"
+  const textTone = isPrimary ? "text-primary-foreground" : "text-foreground"
+  const borderTone = isPrimary ? "border-primary-foreground/25" : "border-foreground/20"
+
+  return (
+    <article className={`min-h-48 rounded-2xl p-5 ${textTone} ${tone}`}>
+      <p className="text-[9px] font-black opacity-75">{label}</p>
+      <h3 className="mt-2 text-lg font-black">{title}</h3>
+      <p className="mt-2 text-xs leading-5 opacity-90">{text}</p>
+      <p className={`mt-5 border-t ${borderTone} pt-3 text-[10px] font-bold`}>LEARNS → {learn}</p>
+    </article>
+  )
 }
