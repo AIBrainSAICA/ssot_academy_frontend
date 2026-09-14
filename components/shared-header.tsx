@@ -11,10 +11,6 @@ import { useLanguage } from "@/lib/i18n/language-context"
 export function SharedHeader() {
   const { t } = useLanguage()
 
-  const openAuth = (type: "login" | "register") => {
-    window.open(`https://ssot.saiva.football:5001/${type}`, "_blank", "noopener,noreferrer")
-  }
-
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
@@ -43,23 +39,6 @@ export function SharedHeader() {
 
           <div className="flex items-center gap-3">
             <LanguageSelector />
-
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="hidden sm:flex items-center gap-1.5 text-sm font-medium">
-                  {t("account")}
-                  <ChevronDown className="h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48">
-                <DropdownMenuItem onClick={() => openAuth("login")} className="cursor-pointer">
-                  <span className="font-medium">{t("login")}</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => openAuth("register")} className="cursor-pointer">
-                  <span className="font-medium">{t("createAccount")}</span>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
